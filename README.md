@@ -28,7 +28,7 @@ The website focuses on:
 The project follows an agile approach using a GitHub Project Board.
 
 🔗 **Product Backlog & Project Board:**  
-(legg inn lenken til GitHub Project Board her)
+[(legg inn lenken til GitHub Project Board her)](https://github.com/users/sofiaamalieb-spec/projects/1/views/1)
 
 ---
 
