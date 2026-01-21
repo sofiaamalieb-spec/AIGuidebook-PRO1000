@@ -1,35 +1,35 @@
 # AIGuidebook – PRO1000
 
-## Project Description
-AIGuidebook is a functional educational website designed for university students.  
-The goal of the project is to provide clear, trustworthy, and easy-to-understand guidance on how to use Artificial Intelligence tools in a responsible, ethical, and academically honest way.
+## Prosjektbeskrivelse
+AIGuidebook er et funksjonelt nettsted utviklet for studenter på universitetsnivå.  
+Målet med prosjektet er å gi tydelig, pålitelig og lettforståelig veiledning i hvordan kunstig intelligens kan brukes på en ansvarlig, etisk og akademisk redelig måte i studiesammenheng.
 
-The website focuses on:
-- Acceptable and unacceptable use of AI in studies
-- Academic integrity and plagiarism
-- Privacy and data protection
-- Risks such as hallucinations and bias
-- Practical examples, checklists, and explanations
+Nettstedet fokuserer på:
+- Tillatt og ikke-tillatt bruk av KI i studier
+- Akademisk integritet og plagiering
+- Personvern og databeskyttelse
+- Risikoer knyttet til KI, som hallusinasjoner og skjevheter
+- Praktiske eksempler, sjekklister og forklaringer
 
 ---
 
 ## Team
-| Name  | Role / Responsibility |
-|------|------------------------|
-| Sofia Amalie Bråthen | Role |
-| Ina Stiansen | Role |
-| Margit | Role |
-| Tori | Role |
-| Adna | Role |
+| Navn | Rolle / ansvar |
+|-----|---------------|
+| Sofia Amalie Bråthen | Rolle |
+| Ina Stiansen | Rolle |
+| Margit | Rolle |
+| Tori | Rolle |
+| Adna | Rolle |
 
 ---
 
-## Project Management
-The project follows an agile approach using a GitHub Project Board.
+## Prosjektstyring
+Prosjektet følger en agil arbeidsmetode og benytter et GitHub Project Board til planlegging og oppfølging av oppgaver.
 
-🔗 **Product Backlog & Project Board:**  
-[(legg inn lenken til GitHub Project Board her)](https://github.com/users/sofiaamalieb-spec/projects/1/views/1)
+🔗 **Produktbacklog & prosjektbord:**  
+(legg inn lenken til GitHub Project Board her)
 
 ---
 
-## Repository Structure
+## Repository-struktur
