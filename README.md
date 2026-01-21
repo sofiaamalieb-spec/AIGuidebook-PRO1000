@@ -28,7 +28,7 @@ Nettstedet fokuserer på:
 Prosjektet følger en agil arbeidsmetode og benytter et GitHub Project Board til planlegging og oppfølging av oppgaver.
 
 🔗 **Produktbacklog & prosjektbord:**  
-(legg inn lenken til GitHub Project Board her)
+https://github.com/users/sofiaamalieb-spec/projects/1 
 
 ---
 
