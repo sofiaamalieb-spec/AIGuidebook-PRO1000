@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules - AI for Students</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+          <div>
+            <h1 class="logo-title" data-translate="siteTitle">AI for Students</h1>
+            <p class="logo-subtitle" data-translate="siteSubtitle">Using AI Responsibly in Your Studies</p>
+          </div>
+        </a>
+
+        <div class="header-controls">
+          <button id="languageToggle" class="btn-control" aria-label="Toggle language">
+            <img id="flagIcon" src="https://flagcdn.com/w80/gb.png" alt="English" width="32" height="24">
+          </button>
+
+          <button id="fontSizeBtn" class="btn-control" aria-label="Increase font size">
+            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+            <span id="fontSizeDisplay">100%</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-links">
+        <a href="prompts.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+          <span data-translate="navPrompts">Prompts</span>
+        </a>
+        <a href="quotations.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+          </svg>
+          <span data-translate="navQuotations">Quotations</span>
+        </a>
+        <a href="concerns.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          <span data-translate="navConcerns">Concerns</span>
+        </a>
+        <a href="what-is-ai.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+          <span data-translate="navWhatIsAI">What is AI</span>
+        </a>
+        <a href="rules.html" class="nav-link">
+          <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+          </svg>
+          <span data-translate="navRules">Rules</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <div class="content-wrapper">
+        <!-- Intro Card -->
+        <div class="card hero-card">
+          <h2 class="hero-title">
+            <span lang="en">Rules for Using AI in Student Work</span>
+            <span lang="no" style="display:none;">Regler for bruk av KI i studiearbeid</span>
+          </h2>
+          <p class="hero-text">
+            <span lang="en">Here are clear and concrete guidelines for what is allowed and not allowed when using artificial intelligence in your studies.</span>
+            <span lang="no" style="display:none;">Her er klare og konkrete retningslinjer for hva som er tillatt og ikke tillatt når du bruker kunstig intelligens i dine studier.</span>
+          </p>
+        </div>
+
+        <!-- Rule 1: Be Critical -->
+        <div class="rule-card border-amber">
+          <div class="rule-header">
+            <div class="rule-icon bg-amber">
+              <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="rule-title">
+                <span lang="en">1. Be Critical of What You Use</span>
+                <span lang="no" style="display:none;">1. Vær kritisk til det du bruker</span>
+              </h3>
+              <p class="rule-desc">
+                <span lang="en">AI can make mistakes. Remember to check your answers.</span>
+                <span lang="no" style="display:none;">KI kan gjøre feil. Husk å kontrollere svarene dine.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="rule-details bg-amber-light">
+            <ul class="rule-list">
+              <li class="rule-list-item">
+                <span class="text-amber-600 font-bold text-xl shrink-0">•</span>
+                <span>
+                  <span lang="en">Always fact-check information from AI against reliable academic sources</span>
+                  <span lang="no" style="display:none;">Faktasjekk alltid informasjon fra KI mot pålitelige akademiske kilder</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-amber-600 font-bold text-xl shrink-0">•</span>
+                <span>
+                  <span lang="en">AI can hallucinate and make up facts that sound credible</span>
+                  <span lang="no" style="display:none;">KI kan hallusinere og finne på fakta som høres troverdige ut</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-amber-600 font-bold text-xl shrink-0">•</span>
+                <span>
+                  <span lang="en">You are responsible for the content in your assignments, not the AI</span>
+                  <span lang="no" style="display:none;">Du er ansvarlig for innholdet i dine oppgaver, ikke KI-en</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rule 2: No Misinformation -->
+        <div class="rule-card border-red">
+          <div class="rule-header">
+            <div class="rule-icon bg-red">
+              <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="rule-title">
+                <span lang="en">2. Don't Use AI to Spread Misinformation</span>
+                <span lang="no" style="display:none;">2. Ikke bruk KI til å spre falsk informasjon</span>
+              </h3>
+              <p class="rule-desc">
+                <span lang="en">AI should not be used to generate, share, or spread false claims.</span>
+                <span lang="no" style="display:none;">KI skal ikke brukes til å generere, dele eller spre uriktige påstander.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="rule-details bg-red-light">
+            <ul class="rule-list">
+              <li class="rule-list-item">
+                <span class="text-red-600 font-bold text-xl shrink-0">✗</span>
+                <span>
+                  <strong>
+                    <span lang="en">NOT allowed:</span>
+                    <span lang="no" style="display:none;">IKKE tillatt:</span>
+                  </strong>
+                  <span lang="en"> Using AI to create fake quotes or fabricated sources</span>
+                  <span lang="no" style="display:none;"> Bruke KI til å lage falske sitater eller oppdiktede kilder</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-red-600 font-bold text-xl shrink-0">✗</span>
+                <span>
+                  <strong>
+                    <span lang="en">NOT allowed:</span>
+                    <span lang="no" style="display:none;">IKKE tillatt:</span>
+                  </strong>
+                  <span lang="en"> Presenting AI-generated claims as facts without verifying them</span>
+                  <span lang="no" style="display:none;"> Presentere KI-genererte påstander som fakta uten å verifisere dem</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-red-600 font-bold text-xl shrink-0">✗</span>
+                <span>
+                  <strong>
+                    <span lang="en">NOT allowed:</span>
+                    <span lang="no" style="display:none;">IKKE tillatt:</span>
+                  </strong>
+                  <span lang="en"> Using AI to create misleading or manipulative content</span>
+                  <span lang="no" style="display:none;"> Bruke KI til å lage villedende eller manipulerende innhold</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rule 3: Privacy -->
+        <div class="rule-card border-orange">
+          <div class="rule-header">
+            <div class="rule-icon bg-orange">
+              <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="rule-title">
+                <span lang="en">3. Always Think About Privacy</span>
+                <span lang="no" style="display:none;">3. Tenk alltid personvern</span>
+              </h3>
+              <p class="rule-desc">
+                <span lang="en">Don't enter sensitive information into AI tools.</span>
+                <span lang="no" style="display:none;">Ikke legg inn sensitiv informasjon i KI-verktøy.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="rule-details bg-orange-light">
+            <p class="font-bold mb-4">
+              <span lang="en">Never share with AI:</span>
+              <span lang="no" style="display:none;">Aldri del med KI:</span>
+            </p>
+            <ul class="rule-list">
+              <li class="rule-list-item">
+                <span class="text-orange-600 font-bold text-xl shrink-0">✗</span>
+                <span>
+                  <span lang="en">Personal ID numbers, addresses, phone numbers, or other personal data</span>
+                  <span lang="no" style="display:none;">Personnumre, adresser, telefonnumre eller andre personopplysninger</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-orange-600 font-bold text-xl shrink-0">✗</span>
+                <span>
+                  <span lang="en">Confidential research data or unpublished results</span>
+                  <span lang="no" style="display:none;">Konfidensielle forskningsdata eller upubliserte resultater</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-orange-600 font-bold text-xl shrink-0">✗</span>
+                <span>
+                  <span lang="en">Information about other people without their consent</span>
+                  <span lang="no" style="display:none;">Informasjon om andre personer uten deres samtykke</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-orange-600 font-bold text-xl shrink-0">✗</span>
+                <span>
+                  <span lang="en">Patient data, interview transcripts, or other sensitive information</span>
+                  <span lang="no" style="display:none;">Pasientdata, intervjuutskrifter eller andre sensitive opplysninger</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rule 4: Structure and Language -->
+        <div class="rule-card border-green">
+          <div class="rule-header">
+            <div class="rule-icon bg-green">
+              <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="rule-title">
+                <span lang="en">4. AI Can Help With Structure and Language</span>
+                <span lang="no" style="display:none;">4. KI kan hjelpe med struktur og språkvask</span>
+              </h3>
+              <p class="rule-desc">
+                <span lang="en">You can use AI to improve language, structure, and flow in your texts.</span>
+                <span lang="no" style="display:none;">Du kan bruke KI til å forbedre språk, struktur og flyt i tekstene dine.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="rule-details bg-green-light">
+            <p class="font-bold mb-4">
+              <span lang="en">✓ Allowed uses:</span>
+              <span lang="no" style="display:none;">✓ Tillatte bruksområder:</span>
+            </p>
+            <ul class="rule-list mb-6">
+              <li class="rule-list-item">
+                <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
+                <span>
+                  <span lang="en">Language polishing: Improve grammar, sentence structure, and word choice</span>
+                  <span lang="no" style="display:none;">Språkvask: Forbedre grammatikk, setningsstruktur og ordvalg</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
+                <span>
+                  <span lang="en">Structure help: Create outlines and organize your thoughts</span>
+                  <span lang="no" style="display:none;">Strukturhjelp: Lage disposisjoner og organisere tankene dine</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
+                <span>
+                  <span lang="en">Idea generation: Brainstorming and exploring different approaches</span>
+                  <span lang="no" style="display:none;">Idégenerering: Brainstorming og utforske forskjellige tilnærminger</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
+                <span>
+                  <span lang="en">Explanations: Get complex concepts explained in a simpler way</span>
+                  <span lang="no" style="display:none;">Forklaringer: Få komplekse konsepter forklart på en enklere måte</span>
+                </span>
+              </li>
+            </ul>
+
+            <div class="alert-box alert-info">
+              <p>
+                <strong>
+                  <span lang="en">Important:</span>
+                  <span lang="no" style="display:none;">Viktig:</span>
+                </strong>
+                <span lang="en"> The content and ideas must be your own. AI should only be used as a tool to improve how you express your own thoughts.</span>
+                <span lang="no" style="display:none;"> Innholdet og ideene må være dine egne. KI skal kun brukes som et verktøy for å forbedre hvordan du uttrykker dine egne tanker.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rule 5: Transparency -->
+        <div class="rule-card border-blue">
+          <div class="rule-header">
+            <div class="rule-icon bg-blue">
+              <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="rule-title">
+                <span lang="en">5. Be Open About Where You've Used AI</span>
+                <span lang="no" style="display:none;">5. Vær åpen om hvor du har brukt KI</span>
+              </h3>
+              <p class="rule-desc">
+                <span lang="en">Clearly state which parts of the work were generated or improved with AI.</span>
+                <span lang="no" style="display:none;">Oppgi tydelig hvilke deler av arbeidet som er generert eller forbedret med KI.</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="rule-details bg-blue-light">
+            <p class="font-bold mb-4">
+              <span lang="en">How to document AI use:</span>
+              <span lang="no" style="display:none;">Hvordan dokumentere KI-bruk:</span>
+            </p>
+            <ul class="rule-list mb-6">
+              <li class="rule-list-item">
+                <span class="text-blue-600 font-bold shrink-0">•</span>
+                <span>
+                  <span lang="en">Include a separate section in your assignment describing how AI was used</span>
+                  <span lang="no" style="display:none;">Legg inn en egen seksjon i oppgaven som beskriver hvordan KI er brukt</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-blue-600 font-bold shrink-0">•</span>
+                <span>
+                  <span lang="en">Specify which AI tool you used (e.g., ChatGPT, Claude, Gemini)</span>
+                  <span lang="no" style="display:none;">Spesifiser hvilket KI-verktøy du har brukt (f.eks. ChatGPT, Claude, Gemini)</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-blue-600 font-bold shrink-0">•</span>
+                <span>
+                  <span lang="en">Describe what the AI was used for (language polishing, outlining, idea generation, etc.)</span>
+                  <span lang="no" style="display:none;">Beskriv hva KI-en ble brukt til (språkvask, disposisjon, idégenerering, etc.)</span>
+                </span>
+              </li>
+              <li class="rule-list-item">
+                <span class="text-blue-600 font-bold shrink-0">•</span>
+                <span>
+                  <span lang="en">Cite the AI tool according to APA7 guidelines</span>
+                  <span lang="no" style="display:none;">Siter KI-verktøyet i henhold til APA7 retningslinjer</span>
+                </span>
+              </li>
+            </ul>
+
+            <div class="example-box">
+              <p class="font-bold mb-2">
+                <span lang="en">Example of documentation:</span>
+                <span lang="no" style="display:none;">Eksempel på dokumentasjon:</span>
+              </p>
+              <p class="example-content" style="font-style: italic;">
+                <span lang="en">"I used ChatGPT (OpenAI, 2024) to improve grammar and sentence structure in this assignment. All ideas, arguments, and conclusions are my own."</span>
+                <span lang="no" style="display:none;">"Jeg har brukt ChatGPT (OpenAI, 2024) til å forbedre grammatikk og setningsstruktur i denne oppgaven. Alle ideer, argumenter og konklusjoner er mine egne."</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Guidelines -->
+        <div class="card" style="background: linear-gradient(135deg, var(--color-slate-700) 0%, var(--color-slate-900) 100%); color: white;">
+          <h3 class="section-title" style="color: white;">
+            <span lang="en">Other Important Guidelines</span>
+            <span lang="no" style="display:none;">Andre viktige retningslinjer</span>
+          </h3>
+          
+          <ul class="rule-list">
+            <li class="rule-list-item">
+              <span class="text-blue-400 font-bold text-xl shrink-0">•</span>
+              <span>
+                <span lang="en">Always check with your teacher or study program what rules apply to your specific assignment or exam</span>
+                <span lang="no" style="display:none;">Sjekk alltid med din faglærer eller studieprogram hvilke regler som gjelder for din spesifikke oppgave eller eksamen</span>
+              </span>
+            </li>
+            <li class="rule-list-item">
+              <span class="text-blue-400 font-bold text-xl shrink-0">•</span>
+              <span>
+                <span lang="en">During exams, there may be stricter rules or bans on AI use</span>
+                <span lang="no" style="display:none;">Ved eksamen kan det være strengere regler eller forbud mot KI-bruk</span>
+              </span>
+            </li>
+            <li class="rule-list-item">
+              <span class="text-blue-400 font-bold text-xl shrink-0">•</span>
+              <span>
+                <span lang="en">Violating the guidelines can lead to suspicion of cheating and serious consequences</span>
+                <span lang="no" style="display:none;">Brudd på retningslinjene kan føre til mistanke om fusk og alvorlige konsekvenser</span>
+              </span>
+            </li>
+            <li class="rule-list-item">
+              <span class="text-blue-400 font-bold text-xl shrink-0">•</span>
+              <span>
+                <span lang="en">Learn to use AI as a tool to support your learning, not replace it</span>
+                <span lang="no" style="display:none;">Lær deg å bruke KI som et verktøy for å støtte læringen din, ikke erstatte den</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sources -->
+        <div class="card">
+          <h3 class="section-title">
+            <svg class="icon-lg" style="display: inline-block; vertical-align: middle; margin-right: 0.5rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+            <span lang="en">Sources and More Information</span>
+            <span lang="no" style="display:none;">Kilder og mer informasjon</span>
+          </h3>
+          
+          <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div>
+              <a href="https://ki.sikt.no/nb" target="_blank" rel="noopener noreferrer" class="link" style="font-size: 1.125rem;">
+                Sikt - Kunnskapssektorens tjenestesenter: KI-ressurser
+              </a>
+              <p style="font-size: 0.875rem; margin-top: 0.25rem; color: var(--color-slate-700);">https://ki.sikt.no/nb</p>
+            </div>
+            
+            <div>
+              <a href="https://www.usn.no/studier/studiekvalitetsuka/bruk-av-ai-ki/" target="_blank" rel="noopener noreferrer" class="link" style="font-size: 1.125rem;">
+                <span lang="en">University of South-Eastern Norway: Use of AI</span>
+                <span lang="no" style="display:none;">Universitetet i Sørøst-Norge: Bruk av AI/KI</span>
+              </a>
+              <p style="font-size: 0.875rem; margin-top: 0.25rem; color: var(--color-slate-700);">https://www.usn.no/studier/studiekvalitetsuka/bruk-av-ai-ki/</p>
+            </div>
+            
+            <div>
+              <a href="https://www.usn.no/studier/studiekvalitetsuka/eksamen-fusk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank" rel="noopener noreferrer" class="link" style="font-size: 1.125rem;">
+                <span lang="en">USN: Guidelines for use of AI in exams and student assignments</span>
+                <span lang="no" style="display:none;">USN: Retningslinjer for bruk av KI ved eksamen og studentoppgaver</span>
+              </a>
+              <p style="font-size: 0.875rem; margin-top: 0.25rem; color: var(--color-slate-700); word-break: break-all;">
+                https://www.usn.no/studier/studiekvalitetsuka/eksamen-fusk/retningslinjer...
+              </p>
+            </div>
+          </div>
+
+          <div class="alert-box alert-info mt-4">
+            <p>
+              <strong>
+                <span lang="en">Note:</span>
+                <span lang="no" style="display:none;">Merk:</span>
+              </strong>
+              <span lang="en"> The rules on this page are based on general guidelines from Norwegian universities. Always check with your own institution for specific rules.</span>
+              <span lang="no" style="display:none;"> Reglene på denne siden er basert på generelle retningslinjer fra norske universiteter. Sjekk alltid med din egen institusjon for spesifikke regler.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p data-translate="footerText">© 2026 AI for Students - Educational Resource for Responsible AI Use</p>
+      <p data-translate="footerAccessibility">Designed with universal accessibility principles in mind</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="rules-translate.js"></script>
+</body>
+</html>
