@@ -33,3 +33,5 @@ https://github.com/users/sofiaamalieb-spec/projects/1
 ---
 
 ## Repository-struktur
+
+15. mars: Margit har fjernet siden sitering, lagt til siteringsnotis i Etikk-siden. Prompts kan også kombineres med Examples, for å redusere antall menyvalg. 
