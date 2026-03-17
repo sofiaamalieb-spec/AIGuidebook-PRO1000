@@ -67,8 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initLanguage();
   initFontSize();
   initNavigation();
-  initCarousel();
-  
+
   // Language toggle
   const languageToggle = document.getElementById('languageToggle');
   if (languageToggle) {
@@ -165,39 +164,6 @@ function initNavigation() {
       link.classList.add('active');
       link.setAttribute('aria-current', 'page');
     }
-  });
-}
-
-// Carousel / Slider
-function initCarousel() {
-  const carousels = document.querySelectorAll('.carousel');
-  carousels.forEach(carousel => {
-    const track = carousel.querySelector('.carousel-track');
-    const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
-    const prevBtn = carousel.querySelector('.carousel-button.prev');
-    const nextBtn = carousel.querySelector('.carousel-button.next');
-    let currentIndex = 0;
-
-    function update() {
-      const offset = -currentIndex * 100;
-      track.style.transform = `translateX(${offset}%)`;
-    }
-
-    function showPrev() {
-      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-      update();
-    }
-
-    function showNext() {
-      currentIndex = (currentIndex + 1) % slides.length;
-      update();
-    }
-
-    if (prevBtn) prevBtn.addEventListener('click', showPrev);
-    if (nextBtn) nextBtn.addEventListener('click', showNext);
-
-    // Start at first slide
-    update();
   });
 }
 
