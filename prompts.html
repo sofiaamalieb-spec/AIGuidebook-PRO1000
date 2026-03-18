@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,8 @@
     <div class="container">
       <div class="header-content">
         <a href="index.html" class="logo">
-          <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-          </svg>
+          <img class="logo-icon" src="images/ai-header.png" alt="logobilde">
+          
           <div>
             <h1 class="logo-title" >KI for studenter</h1>
             <p class="logo-subtitle">Ansvarlig bruk av KI</p>
@@ -21,15 +20,11 @@
         </a>
 
         <div class="header-controls">
-          <!-- <button id="languageToggle" class="btn-control" aria-label="Toggle language">
-            <img id="flagIcon" src="https://flagcdn.com/w80/gb.png" alt="English" width="32" height="24">
-          </button> -->
-          <!-- <button id="fontSizeBtn" class="btn-control" aria-label="Increase font size">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle menu">
+            <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            
             </svg>
-            <span id="fontSizeDisplay">100%</span>
-          </button> -->
         </div>
       </div>
     </div>
@@ -48,7 +43,7 @@
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
           </svg>
-          <span>Prompts</span>
+          <span>Prompter</span>
         </a> 
         <a href="examples.html" class="nav-link">
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -78,12 +73,10 @@
         <!-- Intro Card -->
         <div class="card hero-card">
           <h2 class="hero-title">
-            <span lang="en">Writing Effective Prompts</span>
-            <span lang="no" style="display:none;">Skrive effektive prompter</span>
+            <span>Skrive effektive prompter</span>
           </h2>
           <p class="hero-text">
-            <span lang="en">A well-crafted prompt helps AI tools generate more accurate and useful responses. Learn the three key elements of a good prompt.</span>
-            <span lang="no" style="display:none;">En godt utformet prompt hjelper AI-verktøy med å generere mer nøyaktige og nyttige svar. Lær de tre nøkkelelementene i en god prompt.</span>
+            <span>En godt utformet prompt hjelper AI-verktøy med å generere mer nøyaktige og nyttige svar. Lær de tre nøkkelelementene i en god prompt.</span>
           </p>
         </div>
 
@@ -93,52 +86,45 @@
             <div class="rule-icon bg-blue">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-              </svg>
+              </svg> 
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="en">1. Give it a Role</span>
-                <span lang="no" style="display:none;">1. Gi den en rolle</span>
+                <span>1. Gi den en rolle</span>
               </h3>
               <p class="rule-desc">
-                <span lang="en">Tell the AI what perspective or expertise to adopt. This helps frame the response appropriately.</span>
-                <span lang="no" style="display:none;">Fortell AI-en hvilket perspektiv eller ekspertise den skal ha. Dette hjelper med å ramme svaret riktig inn.</span>
+                <span>Fortell AI-en hvilket perspektiv eller ekspertise den skal ha. Dette hjelper med å ramme svaret riktig inn.</span>
               </p>
             </div>
           </div>
 
           <div class="rule-details bg-blue-light">
             <h4 class="font-bold mb-4">
-              <span lang="en">Examples:</span>
-              <span lang="no" style="display:none;">Eksempler:</span>
+              <span>Eksempler:</span>
             </h4>
             <ul class="rule-list">
               <li class="rule-list-item">
                 <span class="text-blue-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Act as a <strong>biology teacher</strong> explaining photosynthesis..."</span>
-                  <span lang="no" style="display:none;">"Ager som en <strong>biologilærer</strong> som forklarer fotosyntese..."</span>
+                  <span>"Ager som en <strong>biologilærer</strong> som forklarer fotosyntese..."</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-blue-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"You are a <strong>legal expert</strong> analyzing contract law..."</span>
-                  <span lang="no" style="display:none;">"Du er en <strong>juridisk ekspert</strong> som analyserer kontraktsrett..."</span>
+                  <span>"Du er en <strong>juridisk ekspert</strong> som analyserer kontraktsrett..."</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-blue-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Take the role of a <strong>data scientist</strong> interpreting statistics..."</span>
-                  <span lang="no" style="display:none;">"Ta rollen som en <strong>dataforsker</strong> som tolker statistikk..."</span>
+                  <span>"Ta rollen som en <strong>dataforsker</strong> som tolker statistikk..."</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-blue-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Respond as a <strong>history professor</strong> discussing World War II..."</span>
-                  <span lang="no" style="display:none;">"Svar som en <strong>historieprofessor</strong> som diskuterer andre verdenskrig..."</span>
+                  <span>"Svar som en <strong>historieprofessor</strong> som diskuterer andre verdenskrig..."</span>
                 </span>
               </li>
             </ul>
@@ -155,48 +141,41 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="en">2. Define the Output Format</span>
-                <span lang="no" style="display:none;">2. Definer utdataformatet</span>
+                <span>2. Definer utdataformatet</span>
               </h3>
               <p class="rule-desc">
-                <span lang="en">Specify what form you want the response in. This ensures the output matches your needs.</span>
-                <span lang="no" style="display:none;">Spesifiser hvilken form du ønsker svaret i. Dette sikrer at resultatet matcher dine behov.</span>
+                <span>Spesifiser hvilken form du ønsker svaret i. Dette sikrer at resultatet matcher dine behov.</span>
               </p>
             </div>
           </div>
 
           <div class="rule-details bg-green-light">
             <h4 class="font-bold mb-4">
-              <span lang="en">Examples:</span>
-              <span lang="no" style="display:none;">Eksempler:</span>
+              <span>Eksempler:</span>
             </h4>
             <ul class="rule-list">
               <li class="rule-list-item">
                 <span class="text-green-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Write this as <strong>bullet point notes</strong> for studying"</span>
-                  <span lang="no" style="display:none;">"Skriv dette som <strong>kulepunktnotater</strong> for studier"</span>
+                  <span>"Skriv dette som <strong>kulepunktnotater</strong> for studier"</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-green-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Format your response as a <strong>formal business letter</strong>"</span>
-                  <span lang="no" style="display:none;">"Formater svaret som et <strong>formelt forretningsbrev</strong>"</span>
+                  <span>"Formater svaret som et <strong>formelt forretningsbrev</strong>"</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-green-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Create a <strong>structured report</strong> with sections and headings"</span>
-                  <span lang="no" style="display:none;">"Lag en <strong>strukturert rapport</strong> med seksjoner og overskrifter"</span>
+                  <span>"Lag en <strong>strukturert rapport</strong> med seksjoner og overskrifter"</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-green-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Provide a <strong>step-by-step guide</strong> with numbered instructions"</span>
-                  <span lang="no" style="display:none;">"Gi en <strong>trinn-for-trinn guide</strong> med nummererte instruksjoner"</span>
+                  <span>"Gi en <strong>trinn-for-trinn guide</strong> med nummererte instruksjoner"</span>
                 </span>
               </li>
             </ul>
@@ -213,48 +192,41 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="en">3. Define Tone and Language</span>
-                <span lang="no" style="display:none;">3. Definer tone og språk</span>
+                <span>3. Definer tone og språk</span>
               </h3>
               <p class="rule-desc">
-                <span lang="en">Specify the style and level of formality. This affects how the information is communicated.</span>
-                <span lang="no" style="display:none;">Spesifiser stil og formalitetsnivå. Dette påvirker hvordan informasjonen kommuniseres.</span>
+                <span>Spesifiser stil og formalitetsnivå. Dette påvirker hvordan informasjonen kommuniseres.</span>
               </p>
             </div>
           </div>
 
           <div class="rule-details bg-purple-light" style="background: #faf5ff; border-color: #e9d5ff;">
             <h4 class="font-bold mb-4">
-              <span lang="en">Examples:</span>
-              <span lang="no" style="display:none;">Eksempler:</span>
+              <span>Eksempler:</span>
             </h4>
             <ul class="rule-list">
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Use a <strong>formal, academic tone</strong> suitable for an essay"</span>
-                  <span lang="no" style="display:none;">"Bruk en <strong>formell, akademisk tone</strong> egnet for et essay"</span>
+                  <span>"Bruk en <strong>formell, akademisk tone</strong> egnet for et essay"</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Keep it <strong>casual and conversational</strong>, like explaining to a friend"</span>
-                  <span lang="no" style="display:none;">"Hold det <strong>uformelt og samtalende</strong>, som å forklare til en venn"</span>
+                  <span>"Hold det <strong>uformelt og samtalende</strong>, som å forklare til en venn"</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Make it <strong>funny and engaging</strong> with examples"</span>
-                  <span lang="no" style="display:none;">"Gjør det <strong>morsomt og engasjerende</strong> med eksempler"</span>
+                  <span>"Gjør det <strong>morsomt og engasjerende</strong> med eksempler"</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">→</span>
                 <span>
-                  <span lang="en">"Use <strong>serious, professional language</strong> for a business context"</span>
-                  <span lang="no" style="display:none;">"Bruk <strong>seriøst, profesjonelt språk</strong> for forretningsmessig kontekst"</span>
+                  <span>"Bruk <strong>seriøst, profesjonelt språk</strong> for forretningsmessig kontekst"</span>
                 </span>
               </li>
             </ul>
@@ -269,31 +241,26 @@
             </svg>
             <div style="flex: 1;">
               <h3 class="section-title" style="color: white; margin-bottom: 0.5rem;">
-                <span lang="en">Putting It All Together</span>
-                <span lang="no" style="display:none;">Sette det sammen</span>
+                <span>Sette det sammen</span>
               </h3>
               <p style="font-size: 1.125rem; color: #dbeafe;">
-                <span lang="en">Here's an example combining all three elements:</span>
-                <span lang="no" style="display:none;">Her er et eksempel som kombinerer alle tre elementene:</span>
+                <span>Her er et eksempel som kombinerer alle tre elementene:</span>
               </p>
             </div>
           </div>
 
           <div class="example-box" style="background: white; color: var(--color-slate-900); border: none;">
             <p class="example-content" style="font-size: 1.125rem; line-height: 1.75;">
-              <span lang="en">"<span style="font-weight: bold; color: var(--color-blue-600);">Act as a chemistry teacher</span> and <span style="font-weight: bold; color: var(--color-green-600);">create a set of study notes</span> <span style="font-weight: bold; color: var(--color-purple-500);">in simple, clear language</span> explaining the difference between ionic and covalent bonds."</span>
-              <span lang="no" style="display:none;">"<span style="font-weight: bold; color: var(--color-blue-600);">Ager som en kjemilærer</span> og <span style="font-weight: bold; color: var(--color-green-600);">lag et sett med studienotater</span> <span style="font-weight: bold; color: var(--color-purple-500);">på enkelt, klart språk</span> som forklarer forskjellen mellom ioniske og kovalente bindinger."</span>
+              <span>"<span style="font-weight: bold; color: var(--color-blue-600);">Ager som en kjemilærer</span> og <span style="font-weight: bold; color: var(--color-green-600);">lag et sett med studienotater</span> <span style="font-weight: bold; color: var(--color-purple-500);">på enkelt, klart språk</span> som forklarer forskjellen mellom ioniske og kovalente bindinger."</span>
             </p>
           </div>
 
           <div class="alert-box mt-6" style="background: #1e3a8a; border: 2px solid #3b82f6; border-left-width: 4px;">
             <p style="font-size: 1.125rem;">
               <strong>
-                <span lang="en">Pro tip:</span>
-                <span lang="no" style="display:none;">Godt tips:</span>
+                <span>Godt tips:</span>
               </strong>
-              <span lang="en"> The more specific your prompt, the better the AI can tailor its response!</span>
-              <span lang="no" style="display:none;"> Jo mer spesifikk prompten din er, desto bedre kan AI-en tilpasse svaret sitt!</span>
+              <span> Jo mer spesifikk prompten din er, desto bedre kan AI-en tilpasse svaret sitt!</span>
             </p>
           </div>
         </div>
@@ -303,8 +270,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p data-translate="footerText">© 2026 AI for Students - Educational Resource for Responsible AI Use</p>
-      <p data-translate="footerAccessibility">Designed with universal accessibility principles in mind</p>
+      <p>© 2026 AI for Studenter - Pedagogisk ressurs for ansvarlig AI-bruk</p>
+      <p>Designet med universelle tilgjengelighetsprinsipper</p>
     </div>
   </footer>
 

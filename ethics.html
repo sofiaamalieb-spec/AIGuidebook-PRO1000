@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,8 @@
     <div class="container">
       <div class="header-content">
         <a href="index.html" class="logo">
-          <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-          </svg>
+          <img class="logo-icon" src="images/ai-header.png" alt="logobilde">
+          
           <div>
             <h1 class="logo-title" >KI for studenter</h1>
             <p class="logo-subtitle">Ansvarlig bruk av KI</p>
@@ -21,15 +20,11 @@
         </a>
 
         <div class="header-controls">
-          <!-- <button id="languageToggle" class="btn-control" aria-label="Toggle language">
-            <img id="flagIcon" src="https://flagcdn.com/w80/gb.png" alt="English" width="32" height="24">
-          </button> -->
-          <!-- <button id="fontSizeBtn" class="btn-control" aria-label="Increase font size">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle menu">
+            <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
-            <span id="fontSizeDisplay">100%</span>
-          </button> -->
+          </button>
         </div>
       </div>
     </div>
@@ -48,7 +43,7 @@
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
           </svg>
-          <span>Prompts</span>
+          <span>Prompter</span>
         </a> 
         <a href="examples.html" class="nav-link">
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -75,15 +70,14 @@
   <main class="main">
     <div class="container">
       <div class="content-wrapper">
+
         <!-- Intro Card -->
         <div class="card hero-card">
           <h2 class="hero-title">
-            <span lang="en">Important Concerns When Using AI</span>
-            <span lang="no" style="display:none;">Viktige å være obs på ved bruk av AI</span>
+            <span>Viktige å være obs på ved bruk av AI</span>
           </h2>
           <p class="hero-text">
-            <span lang="en">While AI tools are powerful learning aids, there are several critical issues you need to understand to use them safely and responsibly.</span>
-            <span lang="no" style="display:none;">Selv om AI-verktøy er kraftige læringshjelpemidler, er det flere kritiske problemstillinger du må forstå for å bruke dem trygt og ansvarlig.</span>
+            <span>Selv om AI-verktøy er kraftige læringshjelpemidler, er det flere kritiske problemstillinger du må forstå for å bruke dem trygt og ansvarlig.</span>
           </p>
         </div>
 
@@ -97,12 +91,10 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="en">Avoiding Copyright Infringement</span>
-                <span lang="no" style="display:none;">Unngå brudd på opphavsrett</span>
+                <span>Unngå brudd på opphavsrett</span>
               </h3>
               <p class="rule-desc">
-                <span lang="en">AI tools can inadvertently reproduce copyrighted material, which could get you in legal trouble.</span>
-                <span lang="no" style="display:none;">KI-verktøy kan utilsiktet reprodusere opphavsrettsbeskyttet materiale, noe som kan gi deg juridiske problemer. Unngå plagiat, inkludert selvplagiat</span>
+                <span>KI-verktøy kan utilsiktet reprodusere opphavsrettsbeskyttet materiale, noe som kan gi deg juridiske problemer. Unngå plagiat, inkludert selvplagiat</span>
               </p>
             </div>
           </div>
@@ -110,22 +102,19 @@
           <div class="rule-details bg-red-light">
             <div class="mb-6">
               <h4 class="font-bold mb-3">
-                <span lang="en">The Risk:</span>
-                <span lang="no" style="display:none;">Risikoen:</span>
+                <span>Risikoen:</span>
               </h4>
               <ul class="rule-list">
                 <li class="rule-list-item">
                   <span class="text-red-600 font-bold shrink-0">•</span>
                   <span>
-                    <span lang="en">AI models are trained on vast amounts of internet data, including copyrighted works. The training content may also be biased</span>
-                    <span lang="no" style="display:none;">KI-modeller er trent på store mengder internettdata, inkludert opphavsrettsbeskyttede verk. Treningsgrunnlaget kan også være partisk, så vær obs på å ikke videreføre skjevheter i informasjonsgrunnlaget</span>
+                    <span>KI-modeller er trent på store mengder internettdata, inkludert opphavsrettsbeskyttede verk. Treningsgrunnlaget kan også være partisk, så vær obs på å ikke videreføre skjevheter i informasjonsgrunnlaget</span>
                   </span>
                 </li>
                 <li class="rule-list-item">
                   <span class="text-red-600 font-bold shrink-0">•</span>
                   <span>
-                    <span lang="en">The AI might generate text or ideas very similar to copyrighted sources</span>
-                    <span lang="no" style="display:none;">KI-en kan generere tekst eller ideer som er veldig like opphavsrettsbeskyttede kilder</span>
+                    <span>KI-en kan generere tekst eller ideer som er veldig like opphavsrettsbeskyttede kilder</span>
                   </span>
                 </li>
               </ul>
@@ -133,41 +122,34 @@
 
             <div>
               <h4 class="font-bold mb-3">
-                <span lang="en">What to do:</span>
-                <span lang="no" style="display:none;">Tips:</span>
+                <span>Tips:</span>
               </h4>
               <ul class="rule-list">
                 <li class="rule-list-item">
                   <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
                   <span>
                     <strong>
-                      <span lang="en">Always rewrite</span>
-                      <span lang="no" style="display:none;">Omskriv alltid</span>
+                      <span>Omskriv alltid</span>
                     </strong>
-                    <span lang="en"> AI-generated content in your own words and check sources</span>
-                    <span lang="no" style="display:none;"> AI-generert innhold med dine egne ord og vær kildekritisk</span>
+                    <span> AI-generert innhold med dine egne ord og vær kildekritisk</span>
                   </span>
                 </li>
                                 <li class="rule-list-item">
                   <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
                   <span>
                     <strong>
-                      <span lang="en">Included AI as your source</span>
-                      <span lang="no" style="display:none;">Inluder KI i kilder og siter korrekt</span>
+                      <span>Inluder KI i kilder og siter korrekt</span>
                     </strong>
-                    <span lang="en">Refer to AI in text and in your source-list, including what propmt you used</span>
-                    <span lang="no" style="display:none;"> Før opp KI-verktøyet og prompt i kildelisten din, samt løpende i teksten ved direkte sitering</span>
+                    <span> Før opp KI-verktøyet og prompt i kildelisten din, samt løpende i teksten ved direkte sitering</span>
                   </span>
                 </li>
                 <li class="rule-list-item">
                   <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
                   <span>
                     <strong>
-                      <span lang="en">Ask AI for feedback</span>
-                      <span lang="no" style="display:none;">Be KI om tilbakemelding</span>
+                      <span>Be KI om tilbakemelding</span>
                     </strong>
-                    <span lang="en"> on your self produced text. </span>
-                    <span lang="no" style="display:none;">på din egenproduserte tekst</span>
+                    <span>på din egenproduserte tekst</span>
                   </span>
                 </li>
               </ul>
@@ -185,85 +167,70 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="en">Protecting Sensitive Information</span>
-                <span lang="no" style="display:none;">Beskytte sensitiv informasjon</span>
+                <span>Beskytte sensitiv informasjon</span>
               </h3>
               <p class="rule-desc">
-                <span lang="en">Never share personal, confidential, or sensitive information with AI tools.</span>
-                <span lang="no" style="display:none;">Del aldri personlig, konfidensiell eller sensitiv informasjon med KI-verktøy.</span>
+                <span>Del aldri personlig, konfidensiell eller sensitiv informasjon med KI-verktøy.</span>
               </p>
             </div>
           </div>
 
           <div class="rule-details bg-orange-light">
             <h4 class="font-bold mb-3">
-              <span lang="en">What NOT to Share:</span>
-              <span lang="no" style="display:none;">Hva du IKKE skal dele:</span>
+              <span>Hva du IKKE skal dele:</span>
             </h4>
             <p class="mb-4" style="color: var(--color-slate-800);">
-              <span lang="en">Sharing personal or sensitive information with AI tools can be risky because your input may be stored, reused, or exposed without your control.</span>
-              <span lang="no" style="display:none;">Å dele personlig eller sensitiv informasjon med KI-verktøy kan være risikabelt fordi det du skriver kan lagres, gjenbrukes eller eksponeres uten at du har kontroll.</span>
+              <span>Å dele personlig eller sensitiv informasjon med KI-verktøy kan være risikabelt fordi det du skriver kan lagres, gjenbrukes eller eksponeres uten at du har kontroll.</span>
             </p>
             <ul class="rule-list">
               <li class="rule-list-item">
                 <span class="text-orange-600 font-bold shrink-0">✗</span>
                 <span>
                   <strong>
-                    <span lang="en">Personal information:</span>
-                    <span lang="no" style="display:none;">Personlig informasjon:</span>
+                    <span>Personlig informasjon:</span>
                   </strong>
-                  <span lang="en"> addresses, phone numbers, ID numbers, financial details. This can lead to identity theft, fraud, and serious privacy violations.</span>
-                  <span lang="no" style="display:none;"> adresser, telefonnumre, ID-numre, økonomiske detaljer. Dette kan føre til identitetstyveri, svindel og alvorlige personvernbrudd.</span>
+                  <span> adresser, telefonnumre, ID-numre, økonomiske detaljer. Dette kan føre til identitetstyveri, svindel og alvorlige personvernbrudd.</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-orange-600 font-bold shrink-0">✗</span>
                 <span>
                   <strong>
-                    <span lang="en">Confidential data:</span>
-                    <span lang="no" style="display:none;">Konfidensiell data:</span>
+                    <span>Konfidensiell data:</span>
                   </strong>
-                  <span lang="en"> private research data, unpublished work, proprietary information. Sharing this can expose sensitive projects, breach agreements, or allow misuse of your intellectual property.</span>
-                  <span lang="no" style="display:none;"> private forskningsdata, upublisert arbeid, proprietær informasjon. Å dele dette kan eksponere sensitive prosjekter, bryte avtaler eller gi uønsket tilgang til intellektuell eiendom.</span>
+                  <span> private forskningsdata, upublisert arbeid, proprietær informasjon. Å dele dette kan eksponere sensitive prosjekter, bryte avtaler eller gi uønsket tilgang til intellektuell eiendom.</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-orange-600 font-bold shrink-0">✗</span>
                 <span>
                   <strong>
-                    <span lang="en">Others' information:</span>
-                    <span lang="no" style="display:none;">Andres informasjon:</span>
+                    <span>Andres informasjon:</span>
                   </strong>
-                  <span lang="en"> classmates' data, interview transcripts with identifiable information. Sharing this can violate consent and privacy laws, and may harm people whose data you don’t own.</span>
-                  <span lang="no" style="display:none;"> medstudenters data, intervjuutskrifter med identifiserbar informasjon. Å dele dette kan bryte samtykke og personvernlovgivning, og skade dem du ikke har rett til å dele informasjon om.</span>
+                  <span> medstudenters data, intervjuutskrifter med identifiserbar informasjon. Å dele dette kan bryte samtykke og personvernlovgivning, og skade dem du ikke har rett til å dele informasjon om.</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-orange-600 font-bold shrink-0">✗</span>
                 <span>
                   <strong>
-                    <span lang="en">Login information:</span>
-                    <span lang="no" style="display:none;">Innloggingsinformasjon:</span>
+                    <span>Innloggingsinformasjon:</span>
                   </strong>
-                  <span lang="en"> passwords, account details, or multi-factor codes. This information can be used to take over your accounts and access other protected data.</span>
-                  <span lang="no" style="display:none;"> passord, kontodetaljer eller koder for flerfaktorautentisering. Dette kan brukes til å ta over kontoene dine og få tilgang til andre beskyttede data.</span>
+                  <span> passord, kontodetaljer eller koder for flerfaktorautentisering. Dette kan brukes til å ta over kontoene dine og få tilgang til andre beskyttede data.</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-orange-600 font-bold shrink-0">✗</span>
                 <span>
                   <strong>
-                    <span lang="en">Sensitive school data:</span>
-                    <span lang="no" style="display:none;">Sensitive skoledata eller eksamensbesvarelser:</span>
+                    <span>Sensitive skoledata eller eksamensbesvarelser:</span>
                   </strong>
-                  <span lang="en"> exam answers, graded work, or confidential feedback. Sharing this can breach academic integrity rules and expose you or others to disciplinary action.</span>
-                  <span lang="no" style="display:none;"> eksamensbesvarelser, vurderte arbeider eller konfidensiell tilbakemelding. Å dele dette kan bryte faglige integritetsregler og utsette deg eller andre for disiplinær reaksjon.</span>
+                  <span> eksamensbesvarelser, vurderte arbeider eller konfidensiell tilbakemelding. Å dele dette kan bryte faglige integritetsregler og utsette deg eller andre for disiplinær reaksjon.</span>
                 </span>
               </li>
             </ul>
             <p class="mt-4" style="color: var(--color-slate-800);">
-              <span lang="en">Use AI tools responsibly and critically, and always think before you share sensitive information.</span>
-              <span lang="no" style="display:none;">Bruk KI-verktøy ansvarlig og kritisk, og tenk alltid deg om før du deler sensitiv informasjon.</span>
+              <span>Bruk KI-verktøy ansvarlig og kritisk, og tenk alltid deg om før du deler sensitiv informasjon.</span>
             </p>
           </div>
         </div>
@@ -278,45 +245,38 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="en">AI Hallucinations: When AI Makes Things Up</span>
-                <span lang="no" style="display:none;">KI-hallusinasjoner: Når AI finner på ting</span>
+                <span>KI-hallusinasjoner: Når AI finner på ting</span>
               </h3>
               <p class="rule-desc">
-                <span lang="en">AI tools can confidently generate false information that sounds completely convincing.</span>
-                <span lang="no" style="display:none;">AI-verktøy kan selvsikkert generere falsk informasjon som høres helt overbevisende ut.</span>
+                <span>AI-verktøy kan selvsikkert generere falsk informasjon som høres helt overbevisende ut.</span>
               </p>
             </div>
           </div>
 
           <div class="rule-details" style="background: #fef9c3; border-color: #fde047;">
             <h4 class="font-bold mb-3">
-              <span lang="en">What Are Hallucinations?</span>
-              <span lang="no" style="display:none;">Hva er hallusinasjoner?</span>
+              <span>Hva er hallusinasjoner?</span>
             </h4>
             <p class="mb-4" style="color: var(--color-slate-800);">
-              <span lang="en">AI 'hallucinations' occur when the model generates information that is incorrect, fabricated, or doesn't exist—but presents it as fact. This happens because:</span>
-              <span lang="no" style="display:none;">AI-'hallusinasjoner' oppstår når modellen genererer informasjon som er ukorrekt, oppdiktet eller ikke eksisterer—men presenterer det som fakta. Dette skjer fordi:</span>
+              <span>AI-'hallusinasjoner' oppstår når modellen genererer informasjon som er ukorrekt, oppdiktet eller ikke eksisterer—men presenterer det som fakta. Dette skjer fordi:</span>
             </p>
             <ul class="rule-list">
               <li class="rule-list-item">
                 <span style="color: #ca8a04;" class="font-bold shrink-0">•</span>
                 <span>
-                  <span lang="en">AI predicts likely text patterns, not actual truth</span>
-                  <span lang="no" style="display:none;">AI forutsier sannsynlige tekstmønstre, ikke faktisk sannhet</span>
+                  <span>AI forutsier sannsynlige tekstmønstre, ikke faktisk sannhet</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span style="color: #ca8a04;" class="font-bold shrink-0">•</span>
                 <span>
-                  <span lang="en">It may not have information on very recent events or specialized topics</span>
-                  <span lang="no" style="display:none;">Den har kanskje ikke informasjon om svært nylige hendelser eller spesialiserte emner</span>
+                  <span>Den har kanskje ikke informasjon om svært nylige hendelser eller spesialiserte emner</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span style="color: #ca8a04;" class="font-bold shrink-0">•</span>
                 <span>
-                  <span lang="en">It can 'fill in gaps' with plausible-sounding but false information</span>
-                  <span lang="no" style="display:none;">Den kan 'fylle hull' med plausibel, men falsk informasjon</span>
+                  <span>Den kan 'fylle hull' med plausibel, men falsk informasjon</span>
                 </span>
               </li>
             </ul>
@@ -333,53 +293,44 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="en">How to Verify Information</span>
-                <span lang="no" style="display:none;">Hvordan verifisere informasjon</span>
+                <span>Hvordan verifisere informasjon</span>
               </h3>
               <p class="rule-desc">
-                <span lang="en">Always fact-check AI-generated information before using it in your work.</span>
-                <span lang="no" style="display:none;">Faktatsjekk alltid AI-generert informasjon før du bruker den i arbeidet ditt.</span>
+                <span>Faktatsjekk alltid AI-generert informasjon før du bruker den i arbeidet ditt.</span>
               </p>
             </div>
           </div>
 
           <div class="rule-details bg-blue-light">
             <h4 class="font-bold mb-4">
-              <span lang="en">Strategies for Verification:</span>
-              <span lang="no" style="display:none;">Strategier for verifisering:</span>
+              <span>Strategier for verifisering:</span>
             </h4>
 
             <div style="display: flex; flex-direction: column; gap: 1rem;">
               <div class="example-box" style="background: white; border-color: var(--color-slate-300);">
                 <p class="font-bold mb-2">
-                  <span lang="en">1. Ask AI for sources</span>
-                  <span lang="no" style="display:none;">1. Be AI om kilder</span>
+                  <span>1. Be AI om kilder</span>
                 </p>
                 <p style="color: var(--color-slate-700);">
-                  <span lang="en">Request: "Please provide sources for these claims" or "What studies support this information?"</span>
-                  <span lang="no" style="display:none;">Be om: "Vennligst oppgi kilder for disse påstandene" eller "Hvilke studier støtter denne informasjonen?"</span>
+                  <span>Be om: "Vennligst oppgi kilder for disse påstandene" eller "Hvilke studier støtter denne informasjonen?"</span>
                 </p>
               </div>
 
               <div class="example-box" style="background: white; border-color: var(--color-slate-300);">
                 <p class="font-bold mb-2">
-                  <span lang="en">2. Cross-reference with reliable sources</span>
-                  <span lang="no" style="display:none;">2. Kryssreferenser med pålitelige kilder</span>
+                  <span>2. Kryssreferenser med pålitelige kilder</span>
                 </p>
                 <p style="color: var(--color-slate-700);">
-                  <span lang="en">Check facts against academic databases, peer-reviewed journals, or trusted reference materials</span>
-                  <span lang="no" style="display:none;">Sjekk fakta mot akademiske databaser, fagfellevurderte tidsskrifter eller pålitelige referansematerialer</span>
+                  <span>Sjekk fakta mot akademiske databaser, fagfellevurderte tidsskrifter eller pålitelige referansematerialer</span>
                 </p>
               </div>
 
               <div class="example-box" style="background: white; border-color: var(--color-slate-300);">
                 <p class="font-bold mb-2">
-                  <span lang="en">3. Verify URLs and citations</span>
-                  <span lang="no" style="display:none;">3. Verifiser URL-er og sitater</span>
+                  <span>3. Verifiser URL-er og sitater</span>
                 </p>
                 <p style="color: var(--color-slate-700);">
-                  <span lang="en">If AI provides links or citations, actually visit them to confirm they exist and say what AI claims</span>
-                  <span lang="no" style="display:none;">Hvis AI gir lenker eller sitater, faktisk besøk dem for å bekrefte at de eksisterer og sier det AI påstår</span>
+                  <span>Hvis AI gir lenker eller sitater, faktisk besøk dem for å bekrefte at de eksisterer og sier det AI påstår</span>
                 </p>
               </div>
             </div>
@@ -396,85 +347,71 @@
             </div>
             <div>
               <h3 class="section-title">
-                <span lang="en">Bias in AI Training Data</span>
-                <span lang="no" style="display:none;">Skjevhet i AI-treningsdata</span>
+                <span>Skjevhet i AI-treningsdata</span>
               </h3>
               <p class="section-desc">
-                <span lang="en">AI models can reflect and amplify biases present in their training data.</span>
-                <span lang="no" style="display:none;">AI-modeller kan reflektere og forsterke skjevheter som finnes i treningsdataene deres.</span>
+                <span>AI-modeller kan reflektere og forsterke skjevheter som finnes i treningsdataene deres.</span>
               </p>
             </div>
           </div>
 
           <div class="example-box" style="background: #faf5ff; border-color: #e9d5ff;">
             <h4 class="font-bold mb-3">
-              <span lang="en">Understanding AI Bias:</span>
-              <span lang="no" style="display:none;">Forstå AI-skjevhet:</span>
+              <span>Forstå AI-skjevhet:</span>
             </h4>
             <p class="mb-4" style="color: var(--color-slate-800);">
-              <span lang="en">AI models learn from data created by humans, which contains human biases. This means AI can:</span>
-              <span lang="no" style="display:none;">AI-modeller lærer fra data laget av mennesker, som inneholder menneskelige skjevheter. Dette betyr at AI kan:</span>
+              <span>AI-modeller lærer fra data laget av mennesker, som inneholder menneskelige skjevheter. Dette betyr at AI kan:</span>
             </p>
             <ul class="rule-list mb-6">
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">•</span>
                 <span>
-                  <span lang="en">Reflect stereotypes about gender, race, age, nationality, or other characteristics</span>
-                  <span lang="no" style="display:none;">Reflektere stereotypier om kjønn, rase, alder, nasjonalitet eller andre egenskaper</span>
+                  <span>Reflektere stereotypier om kjønn, rase, alder, nasjonalitet eller andre egenskaper</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">•</span>
                 <span>
-                  <span lang="en">Overrepresent certain perspectives while underrepresenting others</span>
-                  <span lang="no" style="display:none;">Overrepresentere visse perspektiver mens andre underrepresenteres</span>
+                  <span>Overrepresentere visse perspektiver mens andre underrepresenteres</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">•</span>
                 <span>
-                  <span lang="en">Present Western or English-language perspectives as universal</span>
-                  <span lang="no" style="display:none;">Presentere vestlige eller engelskspråklige perspektiver som universelle</span>
+                  <span>Presentere vestlige eller engelskspråklige perspektiver som universelle</span>
                 </span>
               </li>
             </ul>
 
             <h4 class="font-bold mb-3">
-              <span lang="en">What You Should Do:</span>
-              <span lang="no" style="display:none;">Hva du bør gjøre:</span>
+              <span>Hva du bør gjøre:</span>
             </h4>
             <ul class="rule-list">
               <li class="rule-list-item">
                 <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
                 <span>
                   <strong>
-                    <span lang="en">Be critical:</span>
-                    <span lang="no" style="display:none;">Vær kritisk:</span>
+                    <span>Vær kritisk:</span>
                   </strong>
-                  <span lang="en"> Question assumptions and perspectives in AI responses</span>
-                  <span lang="no" style="display:none;"> Sett spørsmålstegn ved antakelser og perspektiver i AI-svar</span>
+                  <span> Sett spørsmålstegn ved antakelser og perspektiver i AI-svar</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
                 <span>
                   <strong>
-                    <span lang="en">Seek diverse sources:</span>
-                    <span lang="no" style="display:none;">Søk ulike kilder:</span>
+                    <span>Søk ulike kilder:</span>
                   </strong>
-                  <span lang="en"> Don't rely solely on AI for topics involving social issues</span>
-                  <span lang="no" style="display:none;"> Ikke stol utelukkende på AI for emner som involverer sosiale spørsmål</span>
+                  <span> Ikke stol utelukkende på AI for emner som involverer sosiale spørsmål</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-green-600 font-bold text-xl shrink-0">✓</span>
                 <span>
                   <strong>
-                    <span lang="en">Consider context:</span>
-                    <span lang="no" style="display:none;">Vurder kontekst:</span>
+                    <span>Vurder kontekst:</span>
                   </strong>
-                  <span lang="en"> Recognize that AI may not represent all cultural perspectives</span>
-                  <span lang="no" style="display:none;"> Anerkjenn at AI kanskje ikke representerer alle kulturelle perspektiver</span>
+                  <span> Anerkjenn at AI kanskje ikke representerer alle kulturelle perspektiver</span>
                 </span>
               </li>
             </ul>
@@ -483,11 +420,9 @@
           <div class="alert-box alert-info mt-6" style="background: #e9d5ff; border-color: #a855f7;">
             <p>
               <strong>
-                <span lang="en">Remember:</span>
-                <span lang="no" style="display:none;">Husk:</span>
+                <span>Husk:</span>
               </strong>
-              <span lang="en"> AI is a tool to assist your learning, not a replacement for critical thinking, diverse perspectives, and verified information sources.</span>
-              <span lang="no" style="display:none;"> AI er et verktøy for å hjelpe læringen din, ikke en erstatning for kritisk tenkning, ulike perspektiver og verifiserte informasjonskilder.</span>
+              <span> AI er et verktøy for å hjelpe læringen din, ikke en erstatning for kritisk tenkning, ulike perspektiver og verifiserte informasjonskilder.</span>
             </p>
           </div>
         </div>
@@ -497,8 +432,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p data-translate="footerText">© 2026 AI for Students - Educational Resource for Responsible AI Use</p>
-      <p data-translate="footerAccessibility">Designed with universal accessibility principles in mind</p>
+      <p>© 2026 AI for Studenter - Pedagogisk ressurs for ansvarlig AI-bruk</p>
+      <p>Designet med universelle tilgjengelighetsprinsipper</p>
     </div>
   </footer>
 

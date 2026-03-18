@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,8 @@
     <div class="container">
       <div class="header-content">
         <a href="index.html" class="logo">
-          <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-          </svg>
+          <img class="logo-icon" src="images/ai-header.png" alt="logobilde">
+          
           <div>
             <h1 class="logo-title" >KI for studenter</h1>
             <p class="logo-subtitle">Ansvarlig bruk av KI</p>
@@ -21,15 +20,11 @@
         </a>
 
         <div class="header-controls">
-          <!-- <button id="languageToggle" class="btn-control" aria-label="Toggle language">
-            <img id="flagIcon" src="https://flagcdn.com/w80/gb.png" alt="English" width="32" height="24">
-          </button> -->
-          <!-- <button id="fontSizeBtn" class="btn-control" aria-label="Increase font size">
-            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"></path>
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle menu">
+            <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            
             </svg>
-            <span id="fontSizeDisplay">100%</span>
-          </button> -->
         </div>
       </div>
     </div>
@@ -48,7 +43,7 @@
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
           </svg>
-          <span>Prompts</span>
+          <span>Prompter</span>
         </a> 
         <a href="examples.html" class="nav-link">
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -78,10 +73,10 @@
         <!-- Intro Card -->
         <div class="card hero-card">
           <h2 class="hero-title">
-            <span lang="no" style="display:none;">Hva er AI?</span>
+            <span>Hva er AI?</span>
           </h2>
           <p class="hero-text">
-            <span lang="no" style="display:none;">Å forstå hvordan AI-språkmodeller fungerer hjelper deg å bruke dem mer effektivt og gjenkjenne deres begrensninger.</span>
+            <span>Å forstå hvordan AI-språkmodeller fungerer hjelper deg å bruke dem mer effektivt og gjenkjenne deres begrensninger.</span>
           </p>
         </div>
 
@@ -95,36 +90,36 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="no" style="display:none;">Hva er en språkmodell?</span>
+                <span>Hva er en språkmodell?</span>
               </h3>
               <p class="rule-desc">
-                <span lang="no" style="display:none;">En språkmodell er et AI-system trent til å forstå og generere menneskelignende tekst.</span>
+                <span>En språkmodell er et AI-system trent til å forstå og generere menneskelignende tekst.</span>
               </p>
             </div>
           </div>
 
           <div class="rule-details bg-blue-light">
             <p class="mb-4" style="font-size: 1.125rem; line-height: 1.75;">
-              <span lang="no" style="display:none;">Tenk på det som et ekstremt sofistikert autofullføringssystem. Når du skriver på telefonen din og den foreslår neste ord, er det en enkel språkmodell. AI-chatbots som ChatGPT, Claude eller Gemini bruker mye mer avanserte versjoner som kan:</span>
+              <span>Tenk på det som et ekstremt sofistikert autofullføringssystem. Når du skriver på telefonen din og den foreslår neste ord, er det en enkel språkmodell. AI-chatbots som ChatGPT, Claude eller Gemini bruker mye mer avanserte versjoner som kan:</span>
             </p>
 
             <ul class="rule-list mb-6">
               <li class="rule-list-item">
                 <span class="text-blue-600 font-bold shrink-0">•</span>
                 <span>
-                  <span lang="no" style="display:none;">Forstå kontekst og mening i samtaler</span>
+                  <span>Forstå kontekst og mening i samtaler</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-blue-600 font-bold shrink-0">•</span>
                 <span>
-                  <span lang="no" style="display:none;">Generere sammenhengende, relevante svar</span>
+                  <span>Generere sammenhengende, relevante svar</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-blue-600 font-bold shrink-0">•</span>
                 <span>
-                  <span lang="no" style="display:none;">Følge instruksjoner og tilpasse seg ulike oppgaver</span>
+                  <span>Følge instruksjoner og tilpasse seg ulike oppgaver</span>
                 </span>
               </li>
             </ul>
@@ -132,9 +127,9 @@
             <div class="alert-box alert-info">
               <p>
                 <strong>
-                  <span lang="no" style="display:none;">Viktig punkt:</span>
+                  <span>Viktig punkt:</span>
                 </strong>
-                <span lang="no" style="display:none;"> Språkmodeller 'vet' ikke ting på samme måte som mennesker gjør. De forutsier sannsynlige ordsekvenser basert på mønstre de lærte under trening.</span>
+                <span> Språkmodeller 'vet' ikke ting på samme måte som mennesker gjør. De forutsier sannsynlige ordsekvenser basert på mønstre de lærte under trening.</span>
               </p>
             </div>
           </div>
@@ -150,80 +145,80 @@
             </div>
             <div>
               <h3 class="section-title">
-                <span lang="no" style="display:none;">Hvordan AI trenes</span>
+                <span>Hvordan AI trenes</span>
               </h3>
               <p class="section-desc">
-                <span lang="no" style="display:none;">Å trene en AI-språkmodell er en massiv prosess som involverer enorme mengder tekstdata.</span>
+                <span>Å trene en AI-språkmodell er en massiv prosess som involverer enorme mengder tekstdata.</span>
               </p>
             </div>
           </div>
 
           <div class="example-box" style="background: #faf5ff; border-color: #e9d5ff;">
             <h4 class="font-bold mb-3">
-              <span lang="no" style="display:none;">Hvilke data brukes?</span>
+              <span>Hvilke data brukes?</span>
             </h4>
             <p class="mb-4" style="color: var(--color-slate-800);">
-              <span lang="no" style="display:none;">AI-modeller trenes på ulike tekstkilder inkludert:</span>
+              <span>AI-modeller trenes på ulike tekstkilder inkludert:</span>
             </p>
             <ul class="rule-list mb-6">
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">•</span>
                 <span>
                   <strong>
-                    <span lang="no" style="display:none;">Bøker:</span>
+                    <span>Bøker:</span>
                   </strong>
-                  <span lang="no" style="display:none;"> Millioner av publiserte bøker på tvers av sjangre og emner</span>
+                  <span> Millioner av publiserte bøker på tvers av sjangre og emner</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">•</span>
                 <span>
                   <strong>
-                    <span lang="no" style="display:none;">Nettsider:</span>
+                    <span>Nettsider:</span>
                   </strong>
-                  <span lang="no" style="display:none;"> Offentlige nettsider, artikler og blogginnlegg</span>
+                  <span> Offentlige nettsider, artikler og blogginnlegg</span>
                 </span>
               </li>
               <li class="rule-list-item">
                 <span class="text-purple-600 font-bold shrink-0">•</span>
                 <span>
                   <strong>
-                    <span lang="no" style="display:none;">Akademiske artikler:</span>
+                    <span>Akademiske artikler:</span>
                   </strong>
-                  <span lang="no" style="display:none;"> Forskningspublikasjoner og vitenskapelig litteratur</span>
+                  <span> Forskningspublikasjoner og vitenskapelig litteratur</span>
                 </span>
               </li>
             </ul>
 
             <h4 class="font-bold mb-4">
-              <span lang="no" style="display:none;">Treningsprosessen:</span>
+              <span>Treningsprosessen:</span>
             </h4>
 
             <div style="display: flex; flex-direction: column; gap: 1rem;">
               <div class="example-box" style="background: white; border-color: var(--color-slate-300);">
                 <p class="font-bold mb-2">
-                  <span lang="no" style="display:none;">1. Fortrening</span>
+                  <span>1. Fortrening</span>
                 </p>
                 <p style="color: var(--color-slate-700);">
-                  <span lang="no" style="display:none;">AI-en leser milliarder av ord, lærer grammatikk, fakta, resonneringsmønstre og hvordan språk fungerer. Denne fasen kan ta uker eller måneder på kraftige superdatamaskiner.</span>
+                  <span>AI-en leser milliarder av ord, lærer grammatikk, fakta, resonneringsmønstre og hvordan språk fungerer. Denne fasen kan ta uker eller måneder på kraftige superdatamaskiner.</span>
                 </p>
               </div>
 
               <div class="example-box" style="background: white; border-color: var(--color-slate-300);">
                 <p class="font-bold mb-2">
-                  <span lang="no" style="display:none;">2. Finjustering</span>
+                  <span>2. Finjustering</span>
                 </p>
                 <p style="color: var(--color-slate-700);">
-                  <span lang="no" style="display:none;">Modellen blir raffinert med mer spesifikke data for å gjøre den bedre til å følge instruksjoner, ha samtaler og gi nyttige svar.</span>
+                  <span>Modellen blir raffinert med mer spesifikke data for å gjøre den bedre til å følge instruksjoner, ha samtaler og gi nyttige svar.</span>
                 </p>
               </div>
 
               <div class="example-box" style="background: white; border-color: var(--color-slate-300);">
                 <p class="font-bold mb-2">
-                  <span lang="no" style="display:none;">3. Forsterkningslæring</span>
+                  <span>3. Forsterkningslæring</span>
                 </p>
                 <p style="color: var(--color-slate-700);">
-                  <span lang="no" style="display:none;">Menneskelige anmeldere vurderer AI-svar, og lærer den å produsere høyere kvalitet, tryggere og mer nyttige resultater. AI-en lærer av denne tilbakemeldingen.</span>
+                  <span>Menneskelige anmeldere vurderer AI-svar, og lærer den å produsere høyere kvalitet, tryggere og mer nyttige resultater. AI-en lærer av denne tilbakemeldingen.</span>
                 </p>
               </div>
             </div>
@@ -240,10 +235,10 @@
             </div>
             <div>
               <h3 class="rule-title">
-                <span lang="no" style="display:none;">Viktige begrensninger å huske</span>
+                <span>Viktige begrensninger å huske</span>
               </h3>
               <p class="rule-desc">
-                <span lang="no" style="display:none;">Å forstå hva AI ikke kan gjøre er like viktig som å vite hva den kan gjøre.</span>
+                <span>Å forstå hva AI ikke kan gjøre er like viktig som å vite hva den kan gjøre.</span>
               </p>
             </div>
           </div>
@@ -254,47 +249,45 @@
                 <span class="text-red-600 font-bold text-xl shrink-0">!</span>
                 <div>
                   <strong>
-                    <span lang="no" style="display:none;">Ingen reell forståelse:</span>
+                    <span>Ingen reell forståelse:</span>
                   </strong>
-                  <span lang="no" style="display:none;"> AI forutsier mønstre, den forstår ikke virkelig mening eller kontekst på samme måte som mennesker gjør</span>
+                  <span> AI forutsier mønstre, den forstår ikke virkelig mening eller kontekst på samme måte som mennesker gjør</span>
                 </div>
               </li>
               <li class="rule-list-item">
                 <span class="text-red-600 font-bold text-xl shrink-0">!</span>
                 <div>
                   <strong>
-                    <span lang="no" style="display:none;">Ingen tilgang til aktuell informasjon:</span>
+                    <span>Ingen tilgang til aktuell informasjon:</span>
                   </strong>
-                  <span lang="no" style="display:none;"> De fleste modeller har en kunnskapsdato og kan ikke få tilgang til sanntidsdata</span>
+                  <span> De fleste modeller har en kunnskapsdato og kan ikke få tilgang til sanntidsdata</span>
                 </div>
               </li>
               <li class="rule-list-item">
                 <span class="text-red-600 font-bold text-xl shrink-0">!</span>
                 <div>
                   <strong>
-                    <span lang="no" style="display:none;">Kan ikke verifisere fakta:</span>
+                    <span>Kan ikke verifisere fakta:</span>
                   </strong>
-                  <span lang="no" style="display:none;"> AI genererer tekst basert på mønstre, ikke faktasjekking-databaser</span>
+                  <span> AI genererer tekst basert på mønstre, ikke faktasjekking-databaser</span>
                 </div>
               </li>
               <li class="rule-list-item">
                 <span class="text-red-600 font-bold text-xl shrink-0">!</span>
                 <div>
                   <strong>
-                    <span lang="no" style="display:none;">Utsatt for skjevhet:</span>
+                    <span>Utsatt for skjevhet:</span>
                   </strong>
-                  <span lang="no" style="display:none;"> Reflekterer skjevheter som finnes i treningsdata</span>
+                  <span> Reflekterer skjevheter som finnes i treningsdata</span>
                 </div>
               </li>
               <li class="rule-list-item">
                 <span class="text-red-600 font-bold text-xl shrink-0">!</span>
                 <div>
                   <strong>
-                    <span lang="en">May hallucinate:</span>
-                    <span lang="no" style="display:none;">Kan hallusinere:</span>
+                    <span>Kan hallusinere:</span>
                   </strong>
-                  <span lang="en"> Can confidently state false information</span>
-                  <span lang="no" style="display:none;"> Kan selvsikkert oppgi falsk informasjon</span>
+                  <span> Kan selvsikkert oppgi falsk informasjon</span>
                 </div>
               </li>
             </ul>
@@ -302,11 +295,9 @@
             <div class="alert-box alert-danger">
               <p>
                 <strong>
-                  <span lang="en">Bottom line:</span>
-                  <span lang="no" style="display:none;">Konklusjon:</span>
+                  <span>Konklusjon:</span>
                 </strong>
-                <span lang="en"> AI is a powerful tool for assistance, learning, and productivity—but it's not a replacement for critical thinking, human expertise, or verified sources. Use it wisely!</span>
-                <span lang="no" style="display:none;"> AI er et kraftig verktøy for assistanse, læring og produktivitet—men det er ikke en erstatning for kritisk tenkning, menneskelig ekspertise eller verifiserte kilder. Bruk den klokt!</span>
+                <span> AI er et kraftig verktøy for assistanse, læring og produktivitet—men det er ikke en erstatning for kritisk tenkning, menneskelig ekspertise eller verifiserte kilder. Bruk den klokt!</span>
               </p>
             </div>
           </div>
@@ -317,8 +308,8 @@
 
   <footer class="footer">
     <div class="container">
-      <p data-translate="footerText">© 2026 AI for Students - Educational Resource for Responsible AI Use</p>
-      <p data-translate="footerAccessibility">Designed with universal accessibility principles in mind</p>
+      <p>© 2026 AI for Studenter - Pedagogisk ressurs for ansvarlig AI-bruk</p>
+      <p>Designet med universelle tilgjengelighetsprinsipper</p>
     </div>
   </footer>
 
