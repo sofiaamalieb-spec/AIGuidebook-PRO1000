@@ -778,6 +778,24 @@ a.link:hover {
     display: block;
   }
 
+  .header-content {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .logo-icon {
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  .logo-title {
+    font-size: 1.25rem;
+  }
+
+  .logo-subtitle {
+    display: none;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
