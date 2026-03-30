@@ -330,6 +330,11 @@ body {
   color: var(--color-slate-900);
 }
 
+.alert-info-green {
+  background: var(--color-green-50);
+  border-color: var(--color-green-500);
+}
+
 /* Rule Cards */
 .rule-card {
   background: white;
@@ -647,7 +652,8 @@ a.link:hover {
 .text-blue-100 { color: #dbeafe; }
 .text-slate-800 { color: var(--color-slate-800); }
 .example-box-theme-white { background: white; color: var(--color-slate-900); border: none; }
-.rule-details-flex-col-gap { display: flex; flex-direction: column; gap: 1.5rem; }
+.rule-details-flex-col-gap { display: flex; flex-direction: column; }
+.sources-links-compact { gap: 0.5rem; }
 .code-block-light { background: white; color: var(--color-slate-900); border: 2px solid var(--color-slate-300); padding: 1rem; border-radius: 0.5rem; }
 .code-block-light--small-padding { padding: 0.75rem; }
 .overflow-x-auto { overflow-x: auto; }
