@@ -330,6 +330,11 @@ body {
   color: var(--color-slate-900);
 }
 
+.alert-info-green {
+  background: var(--color-green-50);
+  border-color: var(--color-green-500);
+}
+
 /* Rule Cards */
 .rule-card {
   background: white;
