@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eksempler og prompts - KI for studenter</title>
+  <title>Eksempler - AIGuidebook</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -587,22 +587,41 @@
   <script src="rules-translate.js"></script>
   <script>
     // Accordion functionality
+    const ACCORDION_COUNT = 3;
+
+    function setAccordionState(index, isOpen) {
+      const content = document.getElementById('content-' + index);
+      const header = document.getElementById('section-' + index);
+
+      if (!content || !header) return;
+
+      const icon = header.querySelector('.accordion-icon');
+
+      content.classList.toggle('open', isOpen);
+      header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (icon) {
+        icon.classList.toggle('open', isOpen);
+      }
+    }
+
     function toggleAccordion(index) {
       const content = document.getElementById('content-' + index);
       const header = document.getElementById('section-' + index);
-      const icon = header.querySelector('.accordion-icon');
+
+      if (!content || !header) return;
+
       const isOpen = content.classList.contains('open');
 
-      if (isOpen) {
-        content.classList.remove('open');
-        header.setAttribute('aria-expanded', 'false');
-        icon.classList.remove('open');
-      } else {
-        content.classList.add('open');
-        header.setAttribute('aria-expanded', 'true');
-        icon.classList.add('open');
-      }
+      setAccordionState(index, !isOpen);
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        for (let i = 0; i < ACCORDION_COUNT; i++) {
+          setAccordionState(i, false);
+        }
+      }
+    });
   </script>
 </body>
 </html>
