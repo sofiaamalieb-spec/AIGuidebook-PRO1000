@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initNavigation();
   initHamburgerMenu();
   initAccordions();
+  initChecklist();
   
   // Font size toggle
   const fontSizeBtn = document.getElementById('fontSizeBtn');
@@ -173,6 +174,39 @@ function toggleAccordionButton(header) {
 
   var isOpen = content.classList.contains('open');
   setAccordionButtonState(header, !isOpen);
+}
+
+function initChecklist() {
+  const checklist = document.querySelectorAll('.ai-check');
+  const progress = document.getElementById('checklist-progress');
+  const completionMessage = document.getElementById('checklist-complete');
+  const resetButton = document.getElementById('resetChecklist');
+
+  if (!checklist.length || !progress || !completionMessage || !resetButton) {
+    return;
+  }
+
+  const updateChecklistState = () => {
+    const completed = Array.from(checklist).filter(item => item.checked).length;
+    const total = checklist.length;
+
+    progress.textContent = `${completed} av ${total} fullført`;
+    completionMessage.classList.toggle('visible', completed === total);
+  };
+
+  checklist.forEach(item => {
+    item.addEventListener('change', updateChecklistState);
+  });
+
+  resetButton.addEventListener('click', () => {
+    checklist.forEach(item => {
+      item.checked = false;
+    });
+
+    updateChecklistState();
+  });
+
+  updateChecklistState();
 }
 
 // Export for use in other contexts if needed
