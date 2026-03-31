@@ -89,7 +89,7 @@
 
         <!-- Copyright -->
         <div class="rule-card border-red">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-0" id="ethics-section-0" onclick="toggleEthicsSection(0)" onkeydown="handleEthicsHeaderKey(event, 0)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-0" id="ethics-section-0">
             <div class="rule-icon bg-red">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -168,7 +168,7 @@
 
         <!-- Privacy -->
         <div class="rule-card border-orange">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-1" id="ethics-section-1" onclick="toggleEthicsSection(1)" onkeydown="handleEthicsHeaderKey(event, 1)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-1" id="ethics-section-1">
             <div class="rule-icon bg-orange">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
@@ -249,7 +249,7 @@
 
         <!-- KI Hallucinations -->
         <div class="rule-card border-amber">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-2" id="ethics-section-2" onclick="toggleEthicsSection(2)" onkeydown="handleEthicsHeaderKey(event, 2)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-2" id="ethics-section-2">
             <div class="rule-icon bg-amber">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
@@ -300,7 +300,7 @@
 
         <!-- Verification -->
         <div class="rule-card border-blue">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-3" id="ethics-section-3" onclick="toggleEthicsSection(3)" onkeydown="handleEthicsHeaderKey(event, 3)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-3" id="ethics-section-3">
             <div class="rule-icon bg-blue">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -357,7 +357,7 @@
 
         <!-- Bias -->
         <div class="card card-border-purple">
-          <div class="section-header is-collapsible mb-6" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-4" id="ethics-section-4" onclick="toggleEthicsSection(4)" onkeydown="handleEthicsHeaderKey(event, 4)">
+          <div class="section-header is-collapsible mb-6" role="button" tabindex="0" aria-expanded="true" aria-controls="ethics-content-4" id="ethics-section-4">
             <div class="section-icon bg-purple">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
@@ -461,46 +461,5 @@
 
   <script src="../script.js"></script>
   <script src="rules-translate.js"></script>
-  <script>
-    const ETHICS_SECTION_COUNT = 5;
-
-    function setEthicsSectionState(index, isOpen) {
-      const content = document.getElementById('ethics-content-' + index);
-      const header = document.getElementById('ethics-section-' + index);
-
-      if (!content || !header) return;
-
-      const icon = header.querySelector('.accordion-icon');
-
-      content.classList.toggle('collapsed', !isOpen);
-      header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      if (icon) {
-        icon.classList.toggle('open', isOpen);
-      }
-    }
-
-    function toggleEthicsSection(index) {
-      const content = document.getElementById('ethics-content-' + index);
-      if (!content) return;
-
-      const isOpen = !content.classList.contains('collapsed');
-      setEthicsSectionState(index, !isOpen);
-    }
-
-    function handleEthicsHeaderKey(event, index) {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        toggleEthicsSection(index);
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      if (window.matchMedia('(max-width: 768px)').matches) {
-        for (let i = 0; i < ETHICS_SECTION_COUNT; i++) {
-          setEthicsSectionState(i, false);
-        }
-      }
-    });
-  </script>
 </body>
 </html>

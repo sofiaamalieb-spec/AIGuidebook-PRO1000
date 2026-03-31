@@ -89,7 +89,7 @@
 
         <!-- Rule 1: Be Critical -->
         <div class="rule-card border-amber">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-0" id="rule-section-0" onclick="toggleRuleSection(0)" onkeydown="handleRuleHeaderKey(event, 0)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-0" id="rule-section-0">
             <div class="rule-icon bg-amber">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -134,7 +134,7 @@
 
         <!-- Rule 2: No Misinformation -->
         <div class="rule-card border-red">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-1" id="rule-section-1" onclick="toggleRuleSection(1)" onkeydown="handleRuleHeaderKey(event, 1)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-1" id="rule-section-1">
             <div class="rule-icon bg-red">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -188,7 +188,7 @@
 
         <!-- Rule 3: Privacy -->
         <div class="rule-card border-orange">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-2" id="rule-section-2" onclick="toggleRuleSection(2)" onkeydown="handleRuleHeaderKey(event, 2)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-2" id="rule-section-2">
             <div class="rule-icon bg-orange">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
@@ -242,7 +242,7 @@
 
         <!-- Rule 4: Structure and Language -->
         <div class="rule-card border-green">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-3" id="rule-section-3" onclick="toggleRuleSection(3)" onkeydown="handleRuleHeaderKey(event, 3)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-3" id="rule-section-3">
             <div class="rule-icon bg-green">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -305,7 +305,7 @@
 
         <!-- Rule 5: Transparency -->
         <div class="rule-card border-blue">
-          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-4" id="rule-section-4" onclick="toggleRuleSection(4)" onkeydown="handleRuleHeaderKey(event, 4)">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="rule-content-4" id="rule-section-4">
             <div class="rule-icon bg-blue">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -450,46 +450,5 @@
   </footer>
 
   <script src="../script.js"></script>
-  <script>
-    const RULE_SECTION_COUNT = 5;
-
-    function setRuleSectionState(index, isOpen) {
-      const content = document.getElementById('rule-content-' + index);
-      const header = document.getElementById('rule-section-' + index);
-
-      if (!content || !header) return;
-
-      const icon = header.querySelector('.accordion-icon');
-
-      content.classList.toggle('collapsed', !isOpen);
-      header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      if (icon) {
-        icon.classList.toggle('open', isOpen);
-      }
-    }
-
-    function toggleRuleSection(index) {
-      const content = document.getElementById('rule-content-' + index);
-      if (!content) return;
-
-      const isOpen = !content.classList.contains('collapsed');
-      setRuleSectionState(index, !isOpen);
-    }
-
-    function handleRuleHeaderKey(event, index) {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        toggleRuleSection(index);
-      }
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
-      if (window.matchMedia('(max-width: 768px)').matches) {
-        for (let i = 0; i < RULE_SECTION_COUNT; i++) {
-          setRuleSectionState(i, false);
-        }
-      }
-    });
-  </script>
 </body>
 </html>

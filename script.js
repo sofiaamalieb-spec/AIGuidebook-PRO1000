@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initFontSize();
   initNavigation();
   initHamburgerMenu();
+  initAccordions();
   
   // Font size toggle
   const fontSizeBtn = document.getElementById('fontSizeBtn');
@@ -91,6 +92,87 @@ function initHamburgerMenu() {
       }
     });
   }
+}
+
+// Accordion / Collapsible Sections
+function initAccordions() {
+  // .is-collapsible style (rule-header / section-header): uses 'collapsed' class to hide
+  document.querySelectorAll('.is-collapsible').forEach(function(header) {
+    header.addEventListener('click', function() {
+      toggleCollapsibleSection(header);
+    });
+    header.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleCollapsibleSection(header);
+      }
+    });
+  });
+
+  // button.accordion-header style (examples.html): uses 'open' class to show
+  document.querySelectorAll('button.accordion-header').forEach(function(header) {
+    header.addEventListener('click', function() {
+      toggleAccordionButton(header);
+    });
+  });
+
+  // On mobile, collapse all sections by default
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    document.querySelectorAll('.is-collapsible').forEach(function(header) {
+      setCollapsibleState(header, false);
+    });
+    document.querySelectorAll('button.accordion-header').forEach(function(header) {
+      setAccordionButtonState(header, false);
+    });
+  }
+}
+
+function setCollapsibleState(header, isOpen) {
+  var contentId = header.getAttribute('aria-controls');
+  if (!contentId) return;
+  var content = document.getElementById(contentId);
+  if (!content) return;
+  var icon = header.querySelector('.accordion-icon');
+
+  content.classList.toggle('collapsed', !isOpen);
+  header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  if (icon) {
+    icon.classList.toggle('open', isOpen);
+  }
+}
+
+function toggleCollapsibleSection(header) {
+  var contentId = header.getAttribute('aria-controls');
+  if (!contentId) return;
+  var content = document.getElementById(contentId);
+  if (!content) return;
+
+  var isOpen = !content.classList.contains('collapsed');
+  setCollapsibleState(header, !isOpen);
+}
+
+function setAccordionButtonState(header, isOpen) {
+  var contentId = header.getAttribute('aria-controls');
+  if (!contentId) return;
+  var content = document.getElementById(contentId);
+  if (!content) return;
+  var icon = header.querySelector('.accordion-icon');
+
+  content.classList.toggle('open', isOpen);
+  header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  if (icon) {
+    icon.classList.toggle('open', isOpen);
+  }
+}
+
+function toggleAccordionButton(header) {
+  var contentId = header.getAttribute('aria-controls');
+  if (!contentId) return;
+  var content = document.getElementById(contentId);
+  if (!content) return;
+
+  var isOpen = content.classList.contains('open');
+  setAccordionButtonState(header, !isOpen);
 }
 
 // Export for use in other contexts if needed

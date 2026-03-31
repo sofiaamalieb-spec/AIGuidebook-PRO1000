@@ -108,7 +108,7 @@
 
         <!-- APA7 Citation Format -->
         <div class="rule-card border-blue">
-          <div class="rule-header">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ansvarlig-content-0" id="ansvarlig-section-0">
             <div class="rule-icon bg-blue">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -122,9 +122,12 @@
                 <span>I henhold til retningslinjene i APA 7. utgave kan KI-verktøy siteres som programvare.</span>
               </p>
             </div>
+            <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
           </div>
 
-          <div class="rule-details bg-blue-light rule-details-flex-col-gap">
+          <div id="ansvarlig-content-0" class="rule-details bg-blue-light rule-details-flex-col-gap" role="region" aria-labelledby="ansvarlig-section-0">
             <div>
               <h4 class="font-bold mb-4 text-xl">
                 <span>Tekstsitat:</span>
@@ -159,7 +162,7 @@
 
         <!-- Including Prompts -->
         <div class="rule-card border-green">
-          <div class="rule-header">
+          <div class="rule-header is-collapsible" role="button" tabindex="0" aria-expanded="true" aria-controls="ansvarlig-content-1" id="ansvarlig-section-1">
             <div class="rule-icon bg-green">
               <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -173,9 +176,12 @@
                 <span>For å gjøre bruken tydelig kan du også inkludere prompten du brukte når du siterer KI.</span>
               </p>
             </div>
+            <svg class="accordion-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
           </div>
 
-          <div class="rule-details bg-green-light">
+          <div id="ansvarlig-content-1" class="rule-details bg-green-light" role="region" aria-labelledby="ansvarlig-section-1">
               <h4 class="font-bold mb-4 text-xl">
               <span>Eksempel med prompt:</span>
             </h4>
@@ -249,7 +255,6 @@
   <footer class="footer">
     <div class="container">
       <p>© 2026 AIGuidebook for Studenter - Pedagogisk ressurs for ansvarlig KI-bruk</p>
-      <p>Designet med universelle tilgjengelighetsprinsipper</p>
     </div>
   </footer>
 
