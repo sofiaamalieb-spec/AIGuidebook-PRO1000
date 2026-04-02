@@ -1072,8 +1072,31 @@ a.link:hover {
   }
 
   .header-content {
-    justify-content: space-between;
+    position: relative;
+    justify-content: center;
     flex-wrap: nowrap;
+    padding: 0 4rem;
+  }
+
+  .header-controls {
+    position: absolute;
+    left: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    order: 0;
+  }
+
+  .logo {
+    margin: 0 auto;
+    align-items: center;
+    gap: 0.875rem;
+  }
+
+  .logo > div {
+    display: flex;
+    min-height: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .logo-icon {
