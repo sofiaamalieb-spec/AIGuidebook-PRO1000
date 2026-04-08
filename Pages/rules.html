@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
   <header class="header">
     <div class="container">
       <div class="header-content">
@@ -14,13 +15,13 @@
           <img class="logo-icon" src="../images/ai-header.png" alt="logobilde">
           
           <div>
-            <h1 class="logo-title" >AIGuidebook for studenter</h1>
+            <p class="logo-title" >AIGuidebook for studenter</p>
             <p class="logo-subtitle">Ansvarlig bruk av KI</p>
           </div>
         </a>
 
         <div class="header-controls">
-          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Vis/skjul meny">
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Vis/skjul meny" aria-expanded="false" aria-controls="main-nav-links">
             <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -30,9 +31,9 @@
     </div>
   </header>
 
-  <nav class="nav" aria-label="Main navigation">
+  <nav class="nav" aria-label="Hovednavigasjon">
     <div class="container">
-      <div class="nav-links">
+      <div class="nav-links" id="main-nav-links">
         <a href="what-is-ai.html" class="nav-link">
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
@@ -74,14 +75,14 @@
   </nav>
 
   <!-- Main Content -->
-  <main class="main">
+  <main class="main" id="main-content" tabindex="-1">
     <div class="container">
       <div class="content-wrapper">
         <!-- Intro Card -->
         <div class="card hero-card">
-          <h2 class="hero-title">
+          <h1 class="hero-title">
             Regler for bruk av KI i studiearbeid
-          </h2>
+          </h1>
           <p class="hero-text">
             Her er retningslinjer for hva som er tillatt og ikke tillatt når du bruker KI.
           </p>
@@ -96,9 +97,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="rule-title">
+              <h2 class="rule-title">
                 <span>1. Vær kritisk til det du bruker</span>
-              </h3>
+              </h2>
               <p class="rule-desc">
                 <span>KI kan gjøre feil, så det er viktig å kontrollere svarene.</span>
               </p>
@@ -141,9 +142,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="rule-title">
+              <h2 class="rule-title">
                 <span>2. Ikke bruk KI til å spre falsk informasjon</span>
-              </h3>
+              </h2>
               <p class="rule-desc">
                 <span>KI skal ikke brukes til å generere, dele eller spre uriktige påstander.</span>
               </p>
@@ -195,9 +196,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="rule-title">
+              <h2 class="rule-title">
                 <span>3. Tenk på personvern</span>
-              </h3>
+              </h2>
               <p class="rule-desc">
                 <span>Ikke legg inn sensitiv informasjon i KI-verktøy.</span>
               </p>
@@ -249,9 +250,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="rule-title">
+              <h2 class="rule-title">
                 <span>4. KI kan hjelpe med struktur og språkvask</span>
-              </h3>
+              </h2>
               <p class="rule-desc">
                 <span>Du kan bruke KI til å forbedre språk, struktur og flyt i tekstene dine.</span>
               </p>
@@ -313,9 +314,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="rule-title">
+              <h2 class="rule-title">
                 <span>5. Vær åpen om hvor du har brukt KI</span>
-              </h3>
+              </h2>
               <p class="rule-desc">
                 <span>Oppgi tydelig hvilke deler av arbeidet som er generert eller forbedret med KI.</span>
               </p>
@@ -369,9 +370,9 @@
 
         <!-- Additional Guidelines -->
         <div class="summary-box">
-          <h3 class="summary-title">
+          <h2 class="summary-title">
             <span>Viktige retningslinjer</span>
-          </h3>
+          </h2>
           <ul class="summary-list">
             <li class="summary-list-item">
               <span class="summary-bullet">•</span>
@@ -402,12 +403,12 @@
 
         <!-- Sources -->
         <div class="card card-border-purple">
-          <h3 class="section-title mb-6">
+          <h2 class="section-title mb-6">
             <svg class="icon-lg svg-inline-middle" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
             </svg>
             <span>Kilder og mer informasjon</span>
-          </h3>
+          </h2>
           
           <div class="rule-details-flex-col-gap sources-links-compact">
             <div>

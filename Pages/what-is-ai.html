@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
   <header class="header">
     <div class="container">
       <div class="header-content">
@@ -14,13 +15,13 @@
           <img class="logo-icon" src="../images/ai-header.png" alt="logobilde">
           
           <div>
-            <h1 class="logo-title" >AIGuidebook for studenter</h1>
+            <p class="logo-title" >AIGuidebook for studenter</p>
             <p class="logo-subtitle">Ansvarlig bruk av KI</p>
           </div>
         </a>
 
         <div class="header-controls">
-          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Vis/skjul meny">
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Vis/skjul meny" aria-expanded="false" aria-controls="main-nav-links">
             <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -30,9 +31,9 @@
     </div>
   </header>
 
-  <nav class="nav" aria-label="Main navigation">
+  <nav class="nav" aria-label="Hovednavigasjon">
     <div class="container">
-      <div class="nav-links">
+      <div class="nav-links" id="main-nav-links">
         <a href="what-is-ai.html" class="nav-link">
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
@@ -73,14 +74,14 @@
     </div>
   </nav>
 
-  <main class="main">
+  <main class="main" id="main-content" tabindex="-1">
     <div class="container">
       <div class="content-wrapper">
         <!-- Intro Card -->
         <div class="card hero-card">
-          <h2 class="hero-title">
+          <h1 class="hero-title">
             <span>Hva er KI?</span>
-          </h2>
+          </h1>
           <p class="hero-text">
             <span>Å forstå KI-språkmodeller gjør det lettere å bruke dem riktig og kjenne begrensningene.</span>
           </p>
@@ -95,9 +96,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="rule-title">
+              <h2 class="rule-title">
                 <span>Hva er en språkmodell?</span>
-              </h3>
+              </h2>
               <p class="rule-desc">
                 <span>En språkmodell er et KI-system som er trent til å forstå og generere menneskelignende tekst.</span>
               </p>
@@ -153,9 +154,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="section-title">
+              <h2 class="section-title">
                 <span>Hvordan KI trenes</span>
-              </h3>
+              </h2>
               <p class="section-desc">
                 <span>Å trene en KI-språkmodell er en omfattende prosess som involverer store mengder tekstdata.</span>
               </p>
@@ -167,9 +168,9 @@
 
           <div id="what-is-content-1" class="collapsible-content">
           <div class="example-box example-box-lavender">
-            <h4 class="font-bold mb-3">
+            <h3 class="font-bold mb-3">
               <span>Hvilke data brukes?</span>
-            </h4>
+            </h3>
             <p class="mb-4 text-slate-800">
               <span>KI-modeller trenes på ulike typer tekstkilder, blant annet:</span>
             </p>
@@ -203,9 +204,9 @@
               </li>
             </ul>
 
-            <h4 class="font-bold mb-4">
+            <h3 class="font-bold mb-4">
               <span>Treningsprosessen:</span>
-            </h4>
+            </h3>
 
             <div class="container-vertical-gap">
               <div class="example-box example-box-white">
@@ -248,9 +249,9 @@
               </svg>
             </div>
             <div>
-              <h3 class="rule-title">
+              <h2 class="rule-title">
                 <span>Viktige begrensninger å huske</span>
-              </h3>
+              </h2>
               <p class="rule-desc">
                 <span>Det er like viktig å kjenne begrensningene i KI som å vite hva den kan hjelpe med.</span>
               </p>

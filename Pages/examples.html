@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Hopp til hovedinnhold</a>
   <header class="header">
     <div class="container">
       <div class="header-content">
@@ -14,13 +15,13 @@
           <img class="logo-icon" src="../images/ai-header.png" alt="logobilde">
           
           <div>
-            <h1 class="logo-title" >AIGuidebook for studenter</h1>
+            <p class="logo-title" >AIGuidebook for studenter</p>
             <p class="logo-subtitle">Ansvarlig bruk av KI</p>
           </div>
         </a>
 
         <div class="header-controls">
-          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Vis/skjul meny">
+          <button id="hamburgerBtn" class="hamburger-btn" aria-label="Vis/skjul meny" aria-expanded="false" aria-controls="main-nav-links">
             <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
@@ -30,9 +31,9 @@
     </div>
   </header>
 
-  <nav class="nav" aria-label="Main navigation">
+  <nav class="nav" aria-label="Hovednavigasjon">
     <div class="container">
-      <div class="nav-links">
+      <div class="nav-links" id="main-nav-links">
         <a href="what-is-ai.html" class="nav-link">
           <svg class="nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
@@ -72,14 +73,14 @@
       </div>
     </div>
   </nav>
-  <main class="main">
+  <main class="main" id="main-content" tabindex="-1">
     <div class="container">
       <div class="content-wrapper">
         <!-- Page Header -->
         <div class="card hero-card">
-          <h2 class="hero-title">
+          <h1 class="hero-title">
             <span>Oppgavetyper: riktig og feil bruk av KI</span>
-          </h2>
+          </h1>
           <p class="hero-text">
             <span>Eksemplene nedenfor er veiledende og viser hva som ofte regnes som akseptabel og ikke akseptabel bruk av KI. Reglene kan variere mellom fag, emner og oppgavetyper, så det er lurt å avklare med faglærer dersom du er usikker.</span>
           </p>
@@ -107,9 +108,9 @@
             <div class="flex-row-center-gap">
               <div class="accordion-number blue">1</div>
               <div class="accordion-title-wrapper">
-                <h3 class="accordion-title">
+                <span class="accordion-title">
                   <span>Hjemmeeksamen</span>
-                </h3>
+                </span>
                 <p class="accordion-desc">
                   <span>En individuell skriftlig innlevering du leverer innen en gitt frist, uten eksamensvakt.</span>
                 </p>
@@ -127,9 +128,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>✅ Korrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -185,9 +186,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>❌ Ukorrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -233,9 +234,9 @@
             <div class="flex-row-center-gap">
               <div class="accordion-number purple">2</div>
               <div class="accordion-title-wrapper">
-                <h3 class="accordion-title">
+                <span class="accordion-title">
                   <span>Semesteroppgave</span>
-                </h3>
+                </span>
                 <p class="accordion-desc">
                   <span>En lengre skriftlig oppgave der du forventes å vise selvstendig forskning og analytisk evne.</span>
                 </p>
@@ -253,9 +254,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>✅ Korrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -311,9 +312,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>❌ Ukorrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -359,9 +360,9 @@
             <div class="flex-row-center-gap">
               <div class="accordion-number teal">3</div>
               <div class="accordion-title-wrapper">
-                <h3 class="accordion-title">
+                <span class="accordion-title">
                   <span>Refleksjonsnotat</span>
-                </h3>
+                </span>
                 <p class="accordion-desc">
                   <span>En personlig skriftlig tekst der du reflekterer over din egen læringsprosess og egne erfaringer.</span>
                 </p>
@@ -379,9 +380,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>✅ Korrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -437,9 +438,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>❌ Ukorrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -485,9 +486,9 @@
             <div class="flex-row-center-gap">
               <div class="accordion-number orange">4</div>
               <div class="accordion-title-wrapper">
-                <h3 class="accordion-title">
+                <span class="accordion-title">
                   <span>Prosjektoppgave</span>
-                </h3>
+                </span>
                 <p class="accordion-desc">
                   <span>En gruppebasert eller individuell oppgave der du løser et avgrenset problem over tid, gjerne med praktisk og/eller skriftlig leveranse.</span>
                 </p>
@@ -505,9 +506,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>✅ Korrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -563,9 +564,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>❌ Ukorrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -611,9 +612,9 @@
             <div class="flex-row-center-gap">
               <div class="accordion-number amber">5</div>
               <div class="accordion-title-wrapper">
-                <h3 class="accordion-title">
+                <span class="accordion-title">
                   <span>Presentasjon</span>
-                </h3>
+                </span>
                 <p class="accordion-desc">
                   <span>En fremføring der du formidler faglig innhold til en gruppe, gjerne med lysbilder som støtte.</span>
                 </p>
@@ -631,9 +632,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>✅ Korrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -689,9 +690,9 @@
                   <svg class="sub-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <h4 class="sub-card-title">
+                  <h2 class="sub-card-title">
                     <span>❌ Ukorrekt bruk av KI</span>
-                  </h4>
+                  </h2>
                 </div>
                 <div>
                   <p class="sub-card-label">
@@ -733,9 +734,9 @@
 
         <!-- Summary Box -->
         <div class="summary-box">
-          <h3 class="summary-title">
+          <h2 class="summary-title">
             <span>Husk det viktigste</span>
-          </h3>
+          </h2>
           <ul class="summary-list">
             <li class="summary-list-item">
               <span class="summary-bullet">•</span>
