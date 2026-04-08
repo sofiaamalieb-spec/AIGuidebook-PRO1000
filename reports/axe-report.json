@@ -1,0 +1,51 @@
+[
+  {
+    "path": "index.html",
+    "url": "http://127.0.0.1:4173/index.html",
+    "violations": [],
+    "passesCount": 38,
+    "violationsCount": 0
+  },
+  {
+    "path": "Pages/what-is-ai.html",
+    "url": "http://127.0.0.1:4173/Pages/what-is-ai.html",
+    "violations": [],
+    "passesCount": 41,
+    "violationsCount": 0
+  },
+  {
+    "path": "Pages/rules.html",
+    "url": "http://127.0.0.1:4173/Pages/rules.html",
+    "violations": [],
+    "passesCount": 41,
+    "violationsCount": 0
+  },
+  {
+    "path": "Pages/prompts.html",
+    "url": "http://127.0.0.1:4173/Pages/prompts.html",
+    "violations": [],
+    "passesCount": 41,
+    "violationsCount": 0
+  },
+  {
+    "path": "Pages/examples.html",
+    "url": "http://127.0.0.1:4173/Pages/examples.html",
+    "violations": [],
+    "passesCount": 41,
+    "violationsCount": 0
+  },
+  {
+    "path": "Pages/ethics.html",
+    "url": "http://127.0.0.1:4173/Pages/ethics.html",
+    "violations": [],
+    "passesCount": 41,
+    "violationsCount": 0
+  },
+  {
+    "path": "Pages/ai-checklist.html",
+    "url": "http://127.0.0.1:4173/Pages/ai-checklist.html",
+    "violations": [],
+    "passesCount": 40,
+    "violationsCount": 0
+  }
+]

@@ -73,9 +73,18 @@ function initHamburgerMenu() {
   const navLinks = document.querySelector('.nav-links');
 
   if (hamburgerBtn && navLinks) {
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+
     hamburgerBtn.addEventListener('click', () => {
       navLinks.classList.toggle('open');
       hamburgerBtn.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+
+    hamburgerBtn.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        navLinks.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
     });
 
     // Close menu when clicking outside or on a link
@@ -83,6 +92,14 @@ function initHamburgerMenu() {
       if (!hamburgerBtn.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('open');
         hamburgerBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        navLinks.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        hamburgerBtn.focus();
       }
     });
 
