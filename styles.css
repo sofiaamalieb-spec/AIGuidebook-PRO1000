@@ -93,6 +93,7 @@ body {
 }
 
 .logo-title {
+  display: block;
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
@@ -316,8 +317,11 @@ body {
 
 .hero-text {
   font-size: 1.25rem;
+  font-weight: normal;
   color: var(--color-slate-700);
   line-height: 1.75;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-header {
@@ -1082,6 +1086,7 @@ a.link:hover {
   color: #78350f;
   font-size: 1.125rem;
   margin-bottom: 0.25rem;
+  margin-top: 0;
 }
 
 .warning-text {
