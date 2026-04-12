@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initHamburgerMenu();
   initAccordions();
   initChecklist();
+  initBackToTop();
   
   // Font size toggle
   const fontSizeBtn = document.getElementById('fontSizeBtn');
@@ -224,6 +225,27 @@ function initChecklist() {
   });
 
   updateChecklistState();
+}
+
+// Gå til toppen-knapp
+function initBackToTop() {
+  const btn = document.getElementById('back-to-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', function () {
+    btn.classList.toggle('is-visible', window.scrollY > 300);
+  }, { passive: true });
+
+  btn.addEventListener('click', function () {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReduced) {
+      window.scrollTo(0, 0);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    const logo = document.querySelector('.logo');
+    if (logo) logo.focus();
+  });
 }
 
 // Export for use in other contexts if needed
