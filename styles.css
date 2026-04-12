@@ -845,11 +845,11 @@ a.link:hover {
   flex-shrink: 0;
 }
 
-.accordion-number.blue { background: var(--color-blue-500); }
-.accordion-number.purple { background: var(--color-purple-500); }
-.accordion-number.teal { background: #14b8a6; }
-.accordion-number.orange { background: var(--color-orange-500); }
-.accordion-number.amber { background: var(--color-amber-500); }
+.accordion-number.blue { background: #1d4ed8; }   /* blue-700: ~6.7:1 mot hvit */
+.accordion-number.purple { background: #7e22ce; } /* purple-700: ~7.0:1 mot hvit */
+.accordion-number.teal { background: #0f766e; }   /* teal-700: ~5.8:1 mot hvit */
+.accordion-number.orange { background: #c2410c; } /* orange-700: ~5.2:1 mot hvit */
+.accordion-number.amber { background: #b45309; }  /* amber-700: ~5.0:1 mot hvit */
 
 .accordion-title-wrapper {
   flex: 1;
@@ -993,8 +993,8 @@ a.link:hover {
   margin-top: 0.125rem;
 }
 
-.sub-card.correct .sub-card-list-mark { color: #16a34a; }
-.sub-card.incorrect .sub-card-list-mark { color: #dc2626; }
+.sub-card.correct .sub-card-list-mark { color: #15803d; }  /* green-700: ~4.8:1 mot grønn-50 bg */
+.sub-card.incorrect .sub-card-list-mark { color: #b91c1c; } /* red-700: ~6.0:1 mot rød-50 bg */
 
 .sub-card-box {
   border-radius: 0.5rem;
